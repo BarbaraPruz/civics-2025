@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 120" width="180" height="120" shape-rendering="crispEdges">
+  <!-- 13 alternating stripes, each ~9.23px tall -->
+  <rect width="180" height="120" fill="#B22234"/>
+  <rect y="9.23" width="180" height="9.23" fill="#FFFFFF"/>
+  <rect y="18.46" width="180" height="9.23" fill="#B22234"/>
+  <rect y="27.69" width="180" height="9.23" fill="#FFFFFF"/>
+  <rect y="36.92" width="180" height="9.23" fill="#B22234"/>
+  <rect y="46.15" width="180" height="9.23" fill="#FFFFFF"/>
+  <rect y="55.38" width="180" height="9.23" fill="#B22234"/>
+  <rect y="64.62" width="180" height="9.23" fill="#FFFFFF"/>
+  <rect y="73.85" width="180" height="9.23" fill="#B22234"/>
+  <rect y="83.08" width="180" height="9.23" fill="#FFFFFF"/>
+  <rect y="92.31" width="180" height="9.23" fill="#B22234"/>
+  <rect y="101.54" width="180" height="9.23" fill="#FFFFFF"/>
+  <!-- Canton: covers top 7 stripes height = 7 * 9.23 = 64.61, width ~40% = 72 -->
+  <rect width="72" height="64.61" fill="#3C3B6E"/>
+  <!-- 50 stars in 9 rows of 6 + 4 rows of 5, alternating -->
+  <!-- Star rows spaced ~6.46px apart, starting at y=3.85 -->
+  <!-- 6-star rows: x positions at 6, 14, 22, 30, 38, 46, 54, 62, 70 (cols at ~12px spacing) -->
+  <!-- Using simple circles for clarity at this size -->
+
+  <!-- Row 1: 6 stars -->
+  <circle cx="6"  cy="5.5"  r="3.5" fill="#FFFFFF"/>
+  <circle cx="18" cy="5.5"  r="3.5" fill="#FFFFFF"/>
+  <circle cx="30" cy="5.5"  r="3.5" fill="#FFFFFF"/>
+  <circle cx="42" cy="5.5"  r="3.5" fill="#FFFFFF"/>
+  <circle cx="54" cy="5.5"  r="3.5" fill="#FFFFFF"/>
+  <circle cx="66" cy="5.5"  r="3.5" fill="#FFFFFF"/>
+
+  <!-- Row 2: 5 stars (offset) -->
+  <circle cx="12" cy="12.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="24" cy="12.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="36" cy="12.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="48" cy="12.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="60" cy="12.3" r="3.5" fill="#FFFFFF"/>
+
+  <!-- Row 3: 6 stars -->
+  <circle cx="6"  cy="19.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="18" cy="19.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="30" cy="19.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="42" cy="19.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="54" cy="19.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="66" cy="19.1" r="3.5" fill="#FFFFFF"/>
+
+  <!-- Row 4: 5 stars -->
+  <circle cx="12" cy="25.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="24" cy="25.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="36" cy="25.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="48" cy="25.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="60" cy="25.9" r="3.5" fill="#FFFFFF"/>
+
+  <!-- Row 5: 6 stars -->
+  <circle cx="6"  cy="32.7" r="3.5" fill="#FFFFFF"/>
+  <circle cx="18" cy="32.7" r="3.5" fill="#FFFFFF"/>
+  <circle cx="30" cy="32.7" r="3.5" fill="#FFFFFF"/>
+  <circle cx="42" cy="32.7" r="3.5" fill="#FFFFFF"/>
+  <circle cx="54" cy="32.7" r="3.5" fill="#FFFFFF"/>
+  <circle cx="66" cy="32.7" r="3.5" fill="#FFFFFF"/>
+
+  <!-- Row 6: 5 stars -->
+  <circle cx="12" cy="39.5" r="3.5" fill="#FFFFFF"/>
+  <circle cx="24" cy="39.5" r="3.5" fill="#FFFFFF"/>
+  <circle cx="36" cy="39.5" r="3.5" fill="#FFFFFF"/>
+  <circle cx="48" cy="39.5" r="3.5" fill="#FFFFFF"/>
+  <circle cx="60" cy="39.5" r="3.5" fill="#FFFFFF"/>
+
+  <!-- Row 7: 6 stars -->
+  <circle cx="6"  cy="46.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="18" cy="46.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="30" cy="46.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="42" cy="46.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="54" cy="46.3" r="3.5" fill="#FFFFFF"/>
+  <circle cx="66" cy="46.3" r="3.5" fill="#FFFFFF"/>
+
+  <!-- Row 8: 5 stars -->
+  <circle cx="12" cy="53.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="24" cy="53.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="36" cy="53.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="48" cy="53.1" r="3.5" fill="#FFFFFF"/>
+  <circle cx="60" cy="53.1" r="3.5" fill="#FFFFFF"/>
+
+  <!-- Row 9: 6 stars -->
+  <circle cx="6"  cy="59.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="18" cy="59.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="30" cy="59.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="42" cy="59.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="54" cy="59.9" r="3.5" fill="#FFFFFF"/>
+  <circle cx="66" cy="59.9" r="3.5" fill="#FFFFFF"/>
+</svg>

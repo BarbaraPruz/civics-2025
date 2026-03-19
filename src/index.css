@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --color-dark-background: #034477;
+  --color-red-accent: #ff0000; /* #d4502a; */
+  --color-amber-accent: #f2a83b;
+  --color-cream-text: #f5ecd7;
+  --color-steel-blue: #8a9bb0;
+  --color-silver: #e8ecf0;
+  --color-green-accent: #32cd32;
+  
+  font-family: "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer base {
+  body {
+    background: var(--color-dark-background);
+    @apply w-[98vw] mx-auto flex flex-col gap-3 justify-center p-1 md:p-8;
+  }
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  @apply text-5xl text-(--color-cream-text) font-bold;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  @apply text-3xl text-(--color-amber-accent) font-bold;
+}
+
+h3 {
+  font-family: "Playfair Display", serif;
+  @apply text-2xl text-white font-bold;
+}
+
+.subtitle {
+  @apply text-base text-slate-400 uppercase;
+}
