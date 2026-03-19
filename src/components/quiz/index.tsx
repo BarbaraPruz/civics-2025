@@ -24,9 +24,9 @@ function shuffleQuestions(arr: Question[]) {
 }
 
 function getRetryQuestions(retryQuestionIds: Set<number>): Question[] {
-  return Array.from(retryQuestionIds).map((id) =>
-    questions.find((q) => q.id === id),
-  );
+  return Array.from(retryQuestionIds)
+    .map((id) => questions.find((q) => q.id === id))
+    .filter((q): q is Question => q !== undefined);
 }
 
 interface QuizProps {

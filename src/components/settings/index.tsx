@@ -1,6 +1,8 @@
-import Select, { type CSSObjectWithLabel } from "react-select";
+import Select, { type CSSObjectWithLabel, type SingleValue } from "react-select";
 import useAppStore from "@/store/useAppStore";
 import { Categories, type Category } from "@/types/category";
+
+type OptionType = { label: string; value: string };
 
 const categoryOptions = Object.values(Categories).map((cat) => ({
   value: cat,
@@ -35,11 +37,11 @@ const Settings = () => {
   const retryList = useAppStore((state) => state.retryList);
   const resetRetryList = useAppStore((state) => state.resetRetryList);
 
-  const onSelectCategory = (selected) => {
-    setCategory(selected.value as Category);
+  const onSelectCategory = (selected: SingleValue<OptionType>) => {
+    if (selected) setCategory(selected.value as Category);
   };
 
-  const handleCheck = (evt) => {
+  const handleCheck = (evt:React.ChangeEvent<HTMLInputElement>) => {
     setQuizRetryList(evt.target.checked);
   };
 

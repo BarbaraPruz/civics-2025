@@ -12,9 +12,8 @@ function ProgressBar({ current, total }: ProgressBarProps) {
       <div className="flex items-baseline justify-between mb-1.5 px-0.5">
         <div className="flex items-baseline gap-1.5">
           <span
-            style={{ fontFamily: "'DM Mono', monospace" }}
+            style={{ fontFamily: "'DM Mono', monospace", color: "#63dcb4" }}
             className="text-2xl font-medium tabular-nums leading-none"
-            css={{ color: "#63dcb4" }}
           >
             <span className="text-sm" style={{ color: "#63dcb4" }}>
               {current}
