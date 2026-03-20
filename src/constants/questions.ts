@@ -1,1241 +1,933 @@
 import type { Question } from "@/types/question";
 
 export const questions: Question[] = [
-  // AMERICAN GOVERNMENT — Principles of American Democracy
+// 128 USCIS Civics Test Questions (M-1778, 2025 version)
+// Source: https://www.uscis.gov/citizenship/2025-civics-test
+// Note: Questions marked with * are the 65/20 special consideration set.
+// Some answers (Q23, Q29, Q30, Q38, Q39, Q57, Q61, Q62) vary by location or change with elections/appointments.
+// Always check https://www.uscis.gov/citizenship/testupdates for current officeholder answers.
+
+  // ── AMERICAN GOVERNMENT ──────────────────────────────────────────────────────
+  // A: Principles of American Government (Q1–Q15)
+
   {
     id: 1,
-    cat: "Principles",
-    q: "What is the supreme law of the land?",
-    a: "The Constitution",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What is the form of government of the United States?",
+    answer: "<ul><li>Republic</li><li>Constitution-based federal republic</li><li>Representative democracy</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "USA.gov – How the U.S. Government Is Organized", href: "https://www.usa.gov/branches-of-government" }
   },
   {
     id: 2,
-    cat: "Principles",
-    q: "What does the Constitution do?",
-    a: "Sets up the government, defines the government, and protects basic rights of Americans",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What is the supreme law of the land? ★",
+    answer: "<ul><li>(U.S.) Constitution</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Constitution Center – The U.S. Constitution", href: "https://constitutioncenter.org/the-constitution" }
   },
   {
     id: 3,
-    cat: "Principles",
-    q: "The idea of self-government is in the first three words of the Constitution. What are these words?",
-    a: "<em>We the People</em>",
-    ref: {
-      text: "Read the Constitution at Archives.gov",
-      url: "https://www.archives.gov/founding-docs/constitution",
-    },
+    question: "Name one thing the U.S. Constitution does.",
+    answer: "<ul><li>Forms the government</li><li>Defines powers of government</li><li>Defines the parts of government</li><li>Protects the rights of the people</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Constitution Center – What Does the Constitution Do?", href: "https://constitutioncenter.org/learn/educational-resources/what-does-the-constitution-do" }
   },
   {
     id: 4,
-    cat: "Principles",
-    q: "What is an amendment?",
-    a: "A change to the Constitution, or an addition to the Constitution",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "The U.S. Constitution starts with the words \"We the People.\" What does \"We the People\" mean?",
+    answer: "<ul><li>Self-government</li><li>Popular sovereignty</li><li>Consent of the governed</li><li>People should govern themselves</li><li>(Example of) social contract</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Constitution Center – Preamble", href: "https://constitutioncenter.org/the-constitution/preamble" }
   },
   {
     id: 5,
-    cat: "Principles",
-    q: "What do we call the first ten amendments to the Constitution?",
-    a: "The Bill of Rights",
-    ref: {
-      text: "National Archives — Bill of Rights",
-      url: "https://www.archives.gov/founding-docs/bill-of-rights",
-    },
+    question: "How are changes made to the U.S. Constitution?",
+    answer: "<ul><li>Amendments</li><li>The amendment process</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Archives.gov – Constitutional Amendment Process", href: "https://www.archives.gov/federal-register/constitution" }
   },
   {
     id: 6,
-    cat: "Principles",
-    q: "What is one right or freedom from the First Amendment?",
-    a: "<ul><li>Speech</li><li>Religion</li><li>Assembly</li><li>Press</li><li>Petition the government</li></ul>",
-    ref: {
-      text: "First Amendment text at Archives.gov",
-      url: "https://www.archives.gov/founding-docs/bill-of-rights/what-does-it-say",
-    },
+    question: "What does the Bill of Rights protect?",
+    answer: "<ul><li>(The basic) rights of Americans</li><li>(The basic) rights of people living in the United States</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Archives.gov – The Bill of Rights", href: "https://www.archives.gov/founding-docs/bill-of-rights" }
   },
   {
     id: 7,
-    cat: "Principles",
-    q: "How many amendments does the Constitution have?",
-    a: "Twenty-seven (27)",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "How many amendments does the U.S. Constitution have? ★",
+    answer: "<ul><li>Twenty-seven (27)</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Constitution Center – The Amendments", href: "https://constitutioncenter.org/the-constitution/amendments" }
   },
   {
     id: 8,
-    cat: "Principles",
-    q: "What did the Declaration of Independence do?",
-    a: "Announced our independence from Great Britain, declared our independence from Great Britain, and said that the United States is free (from Great Britain)",
-    ref: {
-      text: "Declaration of Independence — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/declaration",
-    },
+    question: "Why is the Declaration of Independence important?",
+    answer: "<ul><li>It says America is free from British control.</li><li>It says all people are created equal.</li><li>It identifies inherent rights.</li><li>It identifies individual freedoms.</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Archives.gov – Declaration of Independence", href: "https://www.archives.gov/founding-docs/declaration" }
   },
   {
     id: 9,
-    cat: "Principles",
-    q: "What are two rights in the Declaration of Independence?",
-    a: "Life and liberty; liberty and the pursuit of happiness; life and the pursuit of happiness",
-    ref: {
-      text: "Declaration of Independence — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/declaration",
-    },
+    question: "What founding document said the American colonies were free from Britain?",
+    answer: "<ul><li>Declaration of Independence</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Archives.gov – Declaration of Independence", href: "https://www.archives.gov/founding-docs/declaration" }
   },
   {
     id: 10,
-    cat: "Principles",
-    q: "What is freedom of religion?",
-    a: "You can practice any religion, or not practice a religion",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Name two important ideas from the Declaration of Independence and the U.S. Constitution.",
+    answer: "<ul><li>Equality</li><li>Liberty</li><li>Social contract</li><li>Natural rights</li><li>Limited government</li><li>Self-government</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Library of Congress – Founding Documents", href: "https://www.loc.gov/collections/constitutional-convention-and-ratification/" }
   },
   {
     id: 11,
-    cat: "Principles",
-    q: "What is the economic system in the United States?",
-    a: "Capitalist economy, or market economy",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "The words \"Life, Liberty, and the pursuit of Happiness\" are in what founding document?",
+    answer: "<ul><li>Declaration of Independence</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Archives.gov – Declaration of Independence", href: "https://www.archives.gov/founding-docs/declaration" }
   },
   {
     id: 12,
-    cat: "Principles",
-    q: "What is the 'rule of law'?",
-    a: "Everyone must follow the law; leaders must obey the law; government must obey the law; no one is above the law",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What is the economic system of the United States? ★",
+    answer: "<ul><li>Capitalism</li><li>Free market economy</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Investopedia – Capitalism", href: "https://www.investopedia.com/terms/c/capitalism.asp" }
   },
-
-  // SYSTEM OF GOVERNMENT
   {
     id: 13,
-    cat: "Government",
-    q: "Name one branch or part of the government.",
-    a: "Congress / legislative; President / executive; the courts / judicial",
-    ref: {
-      text: "USA.gov — Three Branches",
-      url: "https://www.usa.gov/branches-of-government",
-    },
+    question: "What is the rule of law?",
+    answer: "<ul><li>Everyone must follow the law.</li><li>Leaders must obey the law.</li><li>Government must obey the law.</li><li>No one is above the law.</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "World Justice Project – What Is the Rule of Law?", href: "https://worldjusticeproject.org/about-us/overview/what-rule-law" }
   },
   {
     id: 14,
-    cat: "Government",
-    q: "What stops one branch of government from becoming too powerful?",
-    a: "Checks and balances, separation of powers",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Many documents influenced the U.S. Constitution. Name one.",
+    answer: "<ul><li>Declaration of Independence</li><li>Articles of Confederation</li><li>Federalist Papers</li><li>Anti-Federalist Papers</li><li>Virginia Declaration of Rights</li><li>Fundamental Orders of Connecticut</li><li>Mayflower Compact</li><li>Iroquois Great Law of Peace</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "Constitution Center – Influences on the Constitution", href: "https://constitutioncenter.org/learn" }
   },
   {
     id: 15,
-    cat: "Government",
-    q: "Who is in charge of the executive branch?",
-    a: "The President",
-    ref: {
-      text: "Whitehouse.gov — Executive Branch",
-      url: "https://www.whitehouse.gov/about-the-white-house/our-government/the-executive-branch/",
-    },
+    question: "There are three branches of government. Why?",
+    answer: "<ul><li>So one part does not become too powerful</li><li>Checks and balances</li><li>Separation of powers</li></ul>",
+    category: "Principles of American Government",
+    reference: { label: "USA.gov – Branches of the U.S. Government", href: "https://www.usa.gov/branches-of-government" }
   },
+
+  // B: System of Government (Q16–Q72)
+
   {
     id: 16,
-    cat: "Government",
-    q: "Who makes federal laws?",
-    a: "Congress; Senate and House (of Representatives); (U.S. or national) legislature",
-    ref: { text: "Congress.gov", url: "https://www.congress.gov" },
+    question: "Name the three branches of government.",
+    answer: "<ul><li>Legislative, executive, and judicial</li><li>Congress, president, and the courts</li></ul>",
+    category: "System of Government",
+    reference: { label: "USA.gov – Branches of the U.S. Government", href: "https://www.usa.gov/branches-of-government" }
   },
   {
     id: 17,
-    cat: "Government",
-    q: "What are the two parts of the U.S. Congress?",
-    a: "The Senate and House (of Representatives)",
-    ref: { text: "Congress.gov", url: "https://www.congress.gov" },
+    question: "The President of the United States is in charge of which branch of government?",
+    answer: "<ul><li>Executive branch</li></ul>",
+    category: "System of Government",
+    reference: { label: "White House – The Executive Branch", href: "https://www.whitehouse.gov/about-the-white-house/our-government/the-executive-branch/" }
   },
   {
     id: 18,
-    cat: "Government",
-    q: "How many U.S. Senators are there?",
-    a: "One hundred (100)",
-    ref: {
-      text: "U.S. Senate — senate.gov",
-      url: "https://www.senate.gov/senators/index.htm",
-    },
+    question: "What part of the federal government writes laws?",
+    answer: "<ul><li>(U.S.) Congress</li><li>(U.S. or national) legislature</li><li>Legislative branch</li></ul>",
+    category: "System of Government",
+    reference: { label: "Congress.gov – About Congress", href: "https://www.congress.gov/about" }
   },
   {
     id: 19,
-    cat: "Government",
-    q: "We elect a U.S. Senator for how many years?",
-    a: "Six (6)",
-    ref: {
-      text: "U.S. Senate — senate.gov",
-      url: "https://www.senate.gov/senators/index.htm",
-    },
+    question: "What are the two parts of the U.S. Congress?",
+    answer: "<ul><li>Senate and House (of Representatives)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Congress.gov – About Congress", href: "https://www.congress.gov/about" }
   },
   {
     id: 20,
-    cat: "Government",
-    q: "Who is one of your state's U.S. Senators now?",
-    a: "Answers vary by state. Check senate.gov for current senators.",
-    ref: {
-      text: "Find your senators at senate.gov",
-      url: "https://www.senate.gov/senators/senators-contact.htm",
-    },
+    question: "Name one power of the U.S. Congress. ★",
+    answer: "<ul><li>Writes laws</li><li>Declares war</li><li>Makes the federal budget</li></ul>",
+    category: "System of Government",
+    reference: { label: "Congress.gov – Powers of Congress", href: "https://www.congress.gov/about" }
   },
   {
     id: 21,
-    cat: "Government",
-    q: "The House of Representatives has how many voting members?",
-    a: "Four hundred thirty-five (435)",
-    ref: { text: "House.gov", url: "https://www.house.gov" },
+    question: "How many U.S. senators are there?",
+    answer: "<ul><li>One hundred (100)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Senate.gov – Senators", href: "https://www.senate.gov/senators/index.htm" }
   },
   {
     id: 22,
-    cat: "Government",
-    q: "We elect a U.S. Representative for how many years?",
-    a: "Two (2)",
-    ref: { text: "House.gov", url: "https://www.house.gov" },
+    question: "How long is a term for a U.S. senator?",
+    answer: "<ul><li>Six (6) years</li></ul>",
+    category: "System of Government",
+    reference: { label: "Senate.gov – About the Senate", href: "https://www.senate.gov/about/origins-foundations/senate-and-constitution/constitution.htm" }
   },
   {
     id: 23,
-    cat: "Government",
-    q: "Name your U.S. Representative.",
-    a: "Answers vary by congressional district. Visit house.gov to find yours.",
-    ref: {
-      text: "Find your rep at house.gov",
-      url: "https://www.house.gov/representatives/find-your-representative",
-    },
+    question: "Who is one of your state's U.S. senators now?",
+    answer: "<p><em>Answers will vary.</em> District of Columbia residents and residents of U.S. territories should answer that D.C. (or the territory where the applicant lives) has no U.S. senators.</p>",
+    category: "System of Government",
+    reference: { label: "Senate.gov – Find Your Senators", href: "https://www.senate.gov/senators/senators-contact.htm" }
   },
   {
     id: 24,
-    cat: "Government",
-    q: "Who does a U.S. Senator represent?",
-    a: "All people of the state",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "How many voting members are in the House of Representatives?",
+    answer: "<ul><li>Four hundred thirty-five (435)</li></ul>",
+    category: "System of Government",
+    reference: { label: "House.gov – About the House", href: "https://www.house.gov/the-house-explained" }
   },
   {
     id: 25,
-    cat: "Government",
-    q: "Why do some states have more Representatives than other states?",
-    a: "Because of the state's population; because they have more people; because some states have more people",
-    ref: {
-      text: "House.gov — Apportionment",
-      url: "https://www.house.gov/representatives",
-    },
+    question: "How long is a term for a member of the House of Representatives?",
+    answer: "<ul><li>Two (2) years</li></ul>",
+    category: "System of Government",
+    reference: { label: "House.gov – The House Explained", href: "https://www.house.gov/the-house-explained" }
   },
   {
     id: 26,
-    cat: "Government",
-    q: "We elect a President for how many years?",
-    a: "Four (4)",
-    ref: { text: "Whitehouse.gov", url: "https://www.whitehouse.gov" },
+    question: "Why do U.S. representatives serve shorter terms than U.S. senators?",
+    answer: "<ul><li>To more closely follow public opinion</li></ul>",
+    category: "System of Government",
+    reference: { label: "House.gov – The House Explained", href: "https://www.house.gov/the-house-explained" }
   },
   {
     id: 27,
-    cat: "Government",
-    q: "In what month do we vote for President?",
-    a: "November",
-    ref: { text: "USA.gov — Voting", url: "https://www.usa.gov/election-day" },
+    question: "How many senators does each state have?",
+    answer: "<ul><li>Two (2)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Senate.gov – About the Senate", href: "https://www.senate.gov/about/index.htm" }
   },
   {
     id: 28,
-    cat: "Government",
-    q: "What is the name of the President of the United States now?",
-    a: "Donald J. Trump (as of January 2025)",
-    ref: {
-      text: "Whitehouse.gov — President",
-      url: "https://www.whitehouse.gov/administration/donald-j-trump/",
-    },
+    question: "Why does each state have two senators?",
+    answer: "<ul><li>Equal representation (for small states)</li><li>The Great Compromise (Connecticut Compromise)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Senate.gov – Origins of the Senate", href: "https://www.senate.gov/about/origins-foundations/senate-and-constitution/constitution.htm" }
   },
   {
     id: 29,
-    cat: "Government",
-    q: "What is the name of the Vice President of the United States now?",
-    a: "JD Vance (as of January 2025)",
-    ref: {
-      text: "Whitehouse.gov — Vice President",
-      url: "https://www.whitehouse.gov/administration/jd-vance/",
-    },
+    question: "Name your U.S. representative.",
+    answer: "<p><em>Answers will vary.</em> Residents of territories with nonvoting Delegates or Resident Commissioners may provide the name of that Delegate or Commissioner.</p>",
+    category: "System of Government",
+    reference: { label: "House.gov – Find Your Representative", href: "https://www.house.gov/representatives/find-your-representative" }
   },
   {
     id: 30,
-    cat: "Government",
-    q: "If the President can no longer serve, who becomes President?",
-    a: "The Vice President",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What is the name of the Speaker of the House of Representatives now? ★",
+    answer: "<p>Visit <a href='https://www.uscis.gov/citizenship/testupdates'>uscis.gov/citizenship/testupdates</a> for the current name of the Speaker of the House of Representatives.</p>",
+    category: "System of Government",
+    reference: { label: "USCIS – Civics Test Updates", href: "https://www.uscis.gov/citizenship/testupdates" }
   },
   {
     id: 31,
-    cat: "Government",
-    q: "If both the President and the Vice President can no longer serve, who becomes President?",
-    a: "The Speaker of the House",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who does a U.S. senator represent?",
+    answer: "<ul><li>Citizens of their state</li><li>The people of their state</li></ul>",
+    category: "System of Government",
+    reference: { label: "Senate.gov – About the Senate", href: "https://www.senate.gov/about/index.htm" }
   },
   {
     id: 32,
-    cat: "Government",
-    q: "Who is the Commander in Chief of the military?",
-    a: "The President",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who elects U.S. senators?",
+    answer: "<ul><li>Citizens from their state</li></ul>",
+    category: "System of Government",
+    reference: { label: "Senate.gov – Direct Election of Senators (17th Amendment)", href: "https://www.senate.gov/about/powers-procedures/elections-voting/direct-election-senators.htm" }
   },
   {
     id: 33,
-    cat: "Government",
-    q: "Who signs bills to become laws?",
-    a: "The President",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who does a member of the House of Representatives represent?",
+    answer: "<ul><li>Citizens in their (congressional) district</li><li>The people of their district</li></ul>",
+    category: "System of Government",
+    reference: { label: "House.gov – The House Explained", href: "https://www.house.gov/the-house-explained" }
   },
   {
     id: 34,
-    cat: "Government",
-    q: "Who vetoes bills?",
-    a: "The President",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who elects members of the House of Representatives?",
+    answer: "<ul><li>Citizens from their (congressional) district</li></ul>",
+    category: "System of Government",
+    reference: { label: "House.gov – The House Explained", href: "https://www.house.gov/the-house-explained" }
   },
   {
     id: 35,
-    cat: "Government",
-    q: "What does the President's Cabinet do?",
-    a: "Advises the President",
-    ref: {
-      text: "Whitehouse.gov — Cabinet",
-      url: "https://www.whitehouse.gov/administration/cabinet/",
-    },
+    question: "Some states have more representatives than other states. Why?",
+    answer: "<ul><li>(Because of) the state's population</li><li>(Because) they have more people</li><li>(Because) some states have more people</li></ul>",
+    category: "System of Government",
+    reference: { label: "Census.gov – Congressional Apportionment", href: "https://www.census.gov/topics/public-sector/congressional-apportionment.html" }
   },
   {
     id: 36,
-    cat: "Government",
-    q: "What are two Cabinet-level positions?",
-    a: "Secretary of Agriculture; Secretary of Commerce; Secretary of Defense; Secretary of Education; Secretary of Energy; Secretary of Health and Human Services; Secretary of Homeland Security; Secretary of Housing and Urban Development; Secretary of the Interior; Secretary of Labor; Secretary of State; Secretary of Transportation; Secretary of the Treasury; Secretary of Veterans Affairs; Attorney General; Vice President",
-    ref: {
-      text: "Whitehouse.gov — Cabinet",
-      url: "https://www.whitehouse.gov/administration/cabinet/",
-    },
+    question: "The President of the United States is elected for how many years? ★",
+    answer: "<ul><li>Four (4) years</li></ul>",
+    category: "System of Government",
+    reference: { label: "White House – The Executive Branch", href: "https://www.whitehouse.gov/about-the-white-house/our-government/the-executive-branch/" }
   },
   {
     id: 37,
-    cat: "Government",
-    q: "What does the judicial branch do?",
-    a: "Reviews laws; explains laws; resolves disputes (disagreements); decides if a law goes against the Constitution",
-    ref: {
-      text: "Supreme Court — supremecourt.gov",
-      url: "https://www.supremecourt.gov",
-    },
+    question: "The President of the United States can serve only two terms. Why?",
+    answer: "<ul><li>(Because of) the 22nd Amendment</li><li>To keep the president from becoming too powerful</li></ul>",
+    category: "System of Government",
+    reference: { label: "Constitution Center – 22nd Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-xxii" }
   },
   {
     id: 38,
-    cat: "Government",
-    q: "What is the highest court in the United States?",
-    a: "The Supreme Court",
-    ref: {
-      text: "Supreme Court — supremecourt.gov",
-      url: "https://www.supremecourt.gov",
-    },
+    question: "What is the name of the President of the United States now? ★",
+    answer: "<p>Visit <a href='https://www.uscis.gov/citizenship/testupdates'>uscis.gov/citizenship/testupdates</a> for the current President's name.</p>",
+    category: "System of Government",
+    reference: { label: "USCIS – Civics Test Updates", href: "https://www.uscis.gov/citizenship/testupdates" }
   },
   {
     id: 39,
-    cat: "Government",
-    q: "How many justices are on the Supreme Court?",
-    a: "Nine (9)",
-    ref: {
-      text: "Supreme Court — supremecourt.gov",
-      url: "https://www.supremecourt.gov/about/biographies.aspx",
-    },
+    question: "What is the name of the Vice President of the United States now? ★",
+    answer: "<p>Visit <a href='https://www.uscis.gov/citizenship/testupdates'>uscis.gov/citizenship/testupdates</a> for the current Vice President's name.</p>",
+    category: "System of Government",
+    reference: { label: "USCIS – Civics Test Updates", href: "https://www.uscis.gov/citizenship/testupdates" }
   },
   {
     id: 40,
-    cat: "Government",
-    q: "Who is the Chief Justice of the United States now?",
-    a: "John Roberts (John G. Roberts, Jr.)",
-    ref: {
-      text: "Supreme Court — Chief Justice",
-      url: "https://www.supremecourt.gov/about/biographies.aspx",
-    },
+    question: "If the president can no longer serve, who becomes president?",
+    answer: "<ul><li>The Vice President (of the United States)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Constitution Center – 25th Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-xxv" }
   },
   {
     id: 41,
-    cat: "Government",
-    q: "Under our Constitution, some powers belong to the federal government. What is one power of the federal government?",
-    a: "To print money; to declare war; to create an army; to make treaties",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Name one power of the president.",
+    answer: "<ul><li>Signs bills into law</li><li>Vetoes bills</li><li>Enforces laws</li><li>Commander in Chief (of the military)</li><li>Chief diplomat</li><li>Appoints judges</li></ul>",
+    category: "System of Government",
+    reference: { label: "White House – The Executive Branch", href: "https://www.whitehouse.gov/about-the-white-house/our-government/the-executive-branch/" }
   },
   {
     id: 42,
-    cat: "Government",
-    q: "Under our Constitution, some powers belong to the states. What is one power of the states?",
-    a: "Provide schooling and education; provide protection (police); provide safety (fire departments); give a driver's license; approve zoning and land use",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who is Commander in Chief of the U.S. military?",
+    answer: "<ul><li>The President (of the United States)</li></ul>",
+    category: "System of Government",
+    reference: { label: "White House – The Executive Branch", href: "https://www.whitehouse.gov/about-the-white-house/our-government/the-executive-branch/" }
   },
   {
     id: 43,
-    cat: "Government",
-    q: "Who is the Governor of your state now?",
-    a: "Answers vary by state. Find yours at your state's official government website.",
-    ref: {
-      text: "USA.gov — State Governors",
-      url: "https://www.usa.gov/state-governor",
-    },
+    question: "Who signs bills to become laws?",
+    answer: "<ul><li>The President (of the United States)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Congress.gov – How Laws Are Made", href: "https://www.congress.gov/help/legislation-and-records" }
   },
   {
     id: 44,
-    cat: "Government",
-    q: "What is the capital of your state?",
-    a: "Answers vary by state.",
-    ref: {
-      text: "USA.gov — State Capitals",
-      url: "https://www.usa.gov/state-capital",
-    },
+    question: "Who vetoes bills? ★",
+    answer: "<ul><li>The President (of the United States)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Congress.gov – Presidential Veto", href: "https://www.congress.gov/help/legislation-and-records" }
   },
   {
     id: 45,
-    cat: "Government",
-    q: "What are the two major political parties in the United States?",
-    a: "Democratic and Republican",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who appoints federal judges?",
+    answer: "<ul><li>The President (of the United States)</li></ul>",
+    category: "System of Government",
+    reference: { label: "U.S. Courts – Judicial Appointments", href: "https://www.uscourts.gov/about-federal-courts/court-role-and-structure" }
   },
   {
     id: 46,
-    cat: "Government",
-    q: "What is the political party of the President now?",
-    a: "Republican (Party)",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "The executive branch has many parts. Name one.",
+    answer: "<ul><li>President (of the United States)</li><li>Cabinet</li><li>Federal departments and agencies</li></ul>",
+    category: "System of Government",
+    reference: { label: "White House – The Executive Branch", href: "https://www.whitehouse.gov/about-the-white-house/our-government/the-executive-branch/" }
   },
   {
     id: 47,
-    cat: "Government",
-    q: "What is the name of the Speaker of the House of Representatives now?",
-    a: "Mike Johnson (as of 2025)",
-    ref: { text: "House.gov — Speaker", url: "https://www.speaker.gov" },
+    question: "What does the President's Cabinet do?",
+    answer: "<ul><li>Advises the President (of the United States)</li></ul>",
+    category: "System of Government",
+    reference: { label: "White House – The Cabinet", href: "https://www.whitehouse.gov/administration/cabinet/" }
   },
-
-  // RIGHTS AND RESPONSIBILITIES
   {
     id: 48,
-    cat: "Rights",
-    q: "There are four amendments to the Constitution about who can vote. Describe one of them.",
-    a: "<ul><li>Citizens eighteen (18) and older can vote (26th Amendment)</li><li>You don't have to pay a poll tax (24th Amendment)</li><li>Any citizen can vote — women and men (19th Amendment)</li><li>A male citizen of any race can vote (15th Amendment)</li></ul>",
-    ref: {
-      text: "National Archives — Amendments",
-      url: "https://www.archives.gov/founding-docs/amendments-11-27",
-    },
+    question: "What are two Cabinet-level positions?",
+    answer: "<ul><li>Attorney General</li><li>Secretary of Agriculture</li><li>Secretary of Commerce</li><li>Secretary of Defense</li><li>Secretary of Education</li><li>Secretary of Energy</li><li>Secretary of Health and Human Services</li><li>Secretary of Homeland Security</li><li>Secretary of Housing and Urban Development</li><li>Secretary of the Interior</li><li>Secretary of Labor</li><li>Secretary of State</li><li>Secretary of Transportation</li><li>Secretary of the Treasury</li><li>Secretary of Veterans Affairs</li><li>Vice President (of the United States)</li></ul>",
+    category: "System of Government",
+    reference: { label: "White House – The Cabinet", href: "https://www.whitehouse.gov/administration/cabinet/" }
   },
   {
     id: 49,
-    cat: "Rights",
-    q: "What is one responsibility that is only for United States citizens?",
-    a: "Serve on a jury; vote in a federal election",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Why is the Electoral College important?",
+    answer: "<ul><li>It decides who is elected president.</li><li>It provides a compromise between the popular election of the president and congressional selection.</li></ul>",
+    category: "System of Government",
+    reference: { label: "Archives.gov – Electoral College", href: "https://www.archives.gov/electoral-college/about" }
   },
   {
     id: 50,
-    cat: "Rights",
-    q: "Name one right only for United States citizens.",
-    a: "Vote in a federal election; run for federal office",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What is one part of the judicial branch?",
+    answer: "<ul><li>Supreme Court</li><li>Federal Courts</li></ul>",
+    category: "System of Government",
+    reference: { label: "U.S. Courts – Court Role and Structure", href: "https://www.uscourts.gov/about-federal-courts/court-role-and-structure" }
   },
   {
     id: 51,
-    cat: "Rights",
-    q: "What are two rights of everyone living in the United States?",
-    a: "Freedom of expression; freedom of speech; freedom of assembly; freedom to petition the government; freedom of religion; the right to bear arms",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What does the judicial branch do?",
+    answer: "<ul><li>Reviews laws</li><li>Explains laws</li><li>Resolves disputes (disagreements) about the law</li><li>Decides if a law goes against the (U.S.) Constitution</li></ul>",
+    category: "System of Government",
+    reference: { label: "U.S. Courts – Court Role and Structure", href: "https://www.uscourts.gov/about-federal-courts/court-role-and-structure" }
   },
   {
     id: 52,
-    cat: "Rights",
-    q: "We show loyalty to the United States and its flag when we say what?",
-    a: "The Pledge of Allegiance",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What is the highest court in the United States? ★",
+    answer: "<ul><li>Supreme Court</li></ul>",
+    category: "System of Government",
+    reference: { label: "Supreme Court – About the Court", href: "https://www.supremecourt.gov/about/about.aspx" }
   },
   {
     id: 53,
-    cat: "Rights",
-    q: "What is one promise you make when you become a United States citizen?",
-    a: "Give up loyalty to other countries; defend the Constitution and laws of the United States; obey the laws of the United States; serve in the U.S. military (if needed); serve (help) the nation (if needed); be loyal to the United States",
-    ref: {
-      text: "USCIS — Oath of Allegiance",
-      url: "https://www.uscis.gov/citizenship/learn-about-citizenship/the-naturalization-interview-and-test/naturalization-oath-of-allegiance-to-the-united-states-of-america",
-    },
+    question: "How many seats are on the Supreme Court?",
+    answer: "<ul><li>Nine (9)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Supreme Court – About the Court", href: "https://www.supremecourt.gov/about/about.aspx" }
   },
   {
     id: 54,
-    cat: "Rights",
-    q: "How old do citizens have to be to vote for President?",
-    a: "Eighteen (18) and older",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "How many Supreme Court justices are usually needed to decide a case?",
+    answer: "<ul><li>Five (5)</li></ul>",
+    category: "System of Government",
+    reference: { label: "Supreme Court – About the Court", href: "https://www.supremecourt.gov/about/about.aspx" }
   },
   {
     id: 55,
-    cat: "Rights",
-    q: "What are two ways that Americans can participate in their democracy?",
-    a: "Vote; join a political party; help with a campaign; join a civic group; join a community group; give an elected official your opinion on an issue; call Senators and Representatives; publicly support or oppose an issue or policy; run for office; write to a newspaper",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "How long do Supreme Court justices serve?",
+    answer: "<ul><li>(For) life</li><li>Lifetime appointment</li><li>(Until) retirement</li></ul>",
+    category: "System of Government",
+    reference: { label: "Constitution Center – Article III", href: "https://constitutioncenter.org/the-constitution/articles/article-iii" }
   },
   {
     id: 56,
-    cat: "Rights",
-    q: "When is the last day you can send in federal income tax forms?",
-    a: "April 15",
-    ref: { text: "IRS.gov", url: "https://www.irs.gov" },
+    question: "Supreme Court justices serve for life. Why?",
+    answer: "<ul><li>To be independent (of politics)</li><li>To limit outside (political) influence</li></ul>",
+    category: "System of Government",
+    reference: { label: "Supreme Court – About the Court", href: "https://www.supremecourt.gov/about/about.aspx" }
   },
   {
     id: 57,
-    cat: "Rights",
-    q: "When must all men register for the Selective Service?",
-    a: "At age eighteen (18) / between eighteen (18) and twenty-six (26)",
-    ref: {
-      text: "Selective Service System — sss.gov",
-      url: "https://www.sss.gov/register/",
-    },
+    question: "Who is the Chief Justice of the United States now?",
+    answer: "<p>Visit <a href='https://www.uscis.gov/citizenship/testupdates'>uscis.gov/citizenship/testupdates</a> for the current Chief Justice's name.</p>",
+    category: "System of Government",
+    reference: { label: "USCIS – Civics Test Updates", href: "https://www.uscis.gov/citizenship/testupdates" }
   },
-
-  // AMERICAN HISTORY — Colonial Period and Independence
   {
     id: 58,
-    cat: "Colonial Era",
-    q: "What is one reason colonists came to America?",
-    a: "Freedom; political liberty; religious freedom; economic opportunity; to practice their religion; to escape persecution",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Name one power that is only for the federal government.",
+    answer: "<ul><li>Print paper money</li><li>Mint coins</li><li>Declare war</li><li>Create an army</li><li>Make treaties</li><li>Set foreign policy</li></ul>",
+    category: "System of Government",
+    reference: { label: "Constitution Center – Federalism", href: "https://constitutioncenter.org/learn/educational-resources/federalism" }
   },
   {
     id: 59,
-    cat: "Colonial Era",
-    q: "Who lived in America before the Europeans arrived?",
-    a: "American Indians; Native Americans",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Name one power that is only for the states.",
+    answer: "<ul><li>Provide schooling and education</li><li>Provide protection (police)</li><li>Provide safety (fire departments)</li><li>Give a driver's license</li><li>Approve zoning and land use</li></ul>",
+    category: "System of Government",
+    reference: { label: "Constitution Center – 10th Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-x" }
   },
   {
     id: 60,
-    cat: "Colonial Era",
-    q: "What group of people was taken to America and sold as slaves?",
-    a: "Africans; people from Africa",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What is the purpose of the 10th Amendment?",
+    answer: "<ul><li>(It states that the) powers not given to the federal government belong to the states or to the people.</li></ul>",
+    category: "System of Government",
+    reference: { label: "Constitution Center – 10th Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-x" }
   },
   {
     id: 61,
-    cat: "Colonial Era",
-    q: "Why did the colonists fight the British?",
-    a: "Because of high taxes (taxation without representation); because the British army stayed in their houses (quartering); because they didn't have self-government",
-    ref: {
-      text: "Declaration of Independence — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/declaration",
-    },
+    question: "Who is the governor of your state now? ★",
+    answer: "<p><em>Answers will vary.</em> District of Columbia residents should answer that D.C. does not have a governor.</p>",
+    category: "System of Government",
+    reference: { label: "NGA – Find Your Governor", href: "https://www.nga.org/governors/" }
   },
   {
     id: 62,
-    cat: "Colonial Era",
-    q: "Who wrote the Declaration of Independence?",
-    a: "(Thomas) Jefferson",
-    ref: {
-      text: "Thomas Jefferson — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/declaration/who-wrote-it",
-    },
+    question: "What is the capital of your state?",
+    answer: "<p><em>Answers will vary.</em> District of Columbia residents should answer that D.C. is not a state and does not have a capital. Residents of U.S. territories should name the capital of the territory.</p>",
+    category: "System of Government",
+    reference: { label: "USA.gov – State Governments", href: "https://www.usa.gov/state-governments" }
   },
+
+  // C: Rights and Responsibilities (Q63–Q72)
+
   {
     id: 63,
-    cat: "Colonial Era",
-    q: "When was the Declaration of Independence adopted?",
-    a: "July 4, 1776",
-    ref: {
-      text: "Declaration of Independence — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/declaration",
-    },
+    question: "There are four amendments to the U.S. Constitution about who can vote. Describe one of them.",
+    answer: "<ul><li>Citizens eighteen (18) and older (can vote).</li><li>You don't have to pay (a poll tax) to vote.</li><li>Any citizen can vote. (Women and men can vote.)</li><li>A male citizen of any race (can vote).</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "Constitution Center – Voting Rights Amendments", href: "https://constitutioncenter.org/learn/educational-resources/voting-rights" }
   },
   {
     id: 64,
-    cat: "Colonial Era",
-    q: "There were 13 original states. Name three.",
-    a: "New Hampshire; Massachusetts; Rhode Island; Connecticut; New York; New Jersey; Pennsylvania; Delaware; Maryland; Virginia; North Carolina; South Carolina; Georgia",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who can vote in federal elections, run for federal office, and serve on a jury in the United States?",
+    answer: "<ul><li>Citizens</li><li>Citizens of the United States</li><li>U.S. citizens</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "USA.gov – Voting and Elections", href: "https://www.usa.gov/voting" }
   },
   {
     id: 65,
-    cat: "Colonial Era",
-    q: "What happened at the Constitutional Convention?",
-    a: "The Constitution was written; the Founding Fathers wrote the Constitution",
-    ref: {
-      text: "National Constitution Center",
-      url: "https://constitutioncenter.org/the-constitution/constitutional-convention",
-    },
+    question: "What are three rights of everyone living in the United States?",
+    answer: "<ul><li>Freedom of expression</li><li>Freedom of speech</li><li>Freedom of assembly</li><li>Freedom to petition the government</li><li>Freedom of religion</li><li>The right to bear arms</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "Constitution Center – First Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-i" }
   },
   {
     id: 66,
-    cat: "Colonial Era",
-    q: "When was the Constitution written?",
-    a: "1787",
-    ref: {
-      text: "Archives.gov — Constitution",
-      url: "https://www.archives.gov/founding-docs/constitution",
-    },
+    question: "What do we show loyalty to when we say the Pledge of Allegiance? ★",
+    answer: "<ul><li>The United States</li><li>The flag</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "USA.gov – Pledge of Allegiance", href: "https://www.usa.gov/national-symbols" }
   },
   {
     id: 67,
-    cat: "Colonial Era",
-    q: "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
-    a: "(James) Madison; (Alexander) Hamilton; (John) Jay; Publius",
-    ref: {
-      text: "Library of Congress — Federalist Papers",
-      url: "https://guides.loc.gov/federalist-papers/full-text",
-    },
+    question: "Name two promises that new citizens make in the Oath of Allegiance.",
+    answer: "<ul><li>Give up loyalty to other countries</li><li>Defend the (U.S.) Constitution</li><li>Obey the laws of the United States</li><li>Serve in the military (if needed)</li><li>Serve (help, do important work for) the nation (if needed)</li><li>Be loyal to the United States</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "USCIS – Oath of Allegiance", href: "https://www.uscis.gov/citizenship/learn-about-citizenship/the-naturalization-interview-and-test/naturalization-oath-of-allegiance-to-the-united-states-of-america" }
   },
   {
     id: 68,
-    cat: "Colonial Era",
-    q: "What is one thing Benjamin Franklin is famous for?",
-    a: "U.S. diplomat; oldest member of the Constitutional Convention; first Postmaster General of the United States; writer of <em>Poor Richard's Almanac</em>; started the first free libraries",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "How can people become United States citizens?",
+    answer: "<ul><li>Naturalize</li><li>Derive citizenship</li><li>Be born in the United States (14th Amendment)</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "USCIS – Citizenship", href: "https://www.uscis.gov/citizenship" }
   },
   {
     id: 69,
-    cat: "Colonial Era",
-    q: "Who is the 'Father of Our Country'?",
-    a: "(George) Washington",
-    ref: {
-      text: "Mount Vernon — George Washington",
-      url: "https://www.mountvernon.org/george-washington/",
-    },
+    question: "What are two examples of civic participation in the United States?",
+    answer: "<ul><li>Vote</li><li>Run for office</li><li>Join a political party</li><li>Help with a campaign</li><li>Join a civic group</li><li>Join a community group</li><li>Give an elected official your opinion (on an issue)</li><li>Contact elected officials</li><li>Support or oppose an issue or policy</li><li>Write to a newspaper</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "USA.gov – Participate in Your Government", href: "https://www.usa.gov/contact-elected-officials" }
   },
   {
     id: 70,
-    cat: "Colonial Era",
-    q: "Who was the first President?",
-    a: "(George) Washington",
-    ref: {
-      text: "Whitehouse.gov — Presidents",
-      url: "https://www.whitehouse.gov/about-the-white-house/presidents/george-washington/",
-    },
+    question: "What is one way Americans can serve their country?",
+    answer: "<ul><li>Vote</li><li>Pay taxes</li><li>Obey the law</li><li>Serve in the military</li><li>Run for office</li><li>Work for local, state, or federal government</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "USA.gov – Citizenship Responsibilities", href: "https://www.usa.gov/become-us-citizen" }
   },
-
-  // 1800s
   {
     id: 71,
-    cat: "1800s",
-    q: "What territory did the United States buy from France in 1803?",
-    a: "The Louisiana Territory; Louisiana",
-    ref: {
-      text: "Library of Congress — Louisiana Purchase",
-      url: "https://www.loc.gov/collections/louisiana-european-explorations-and-the-louisiana-purchase/articles-and-essays/louisiana-purchase/",
-    },
+    question: "Why is it important to pay federal taxes?",
+    answer: "<ul><li>Required by law</li><li>All people pay to fund the federal government</li><li>Required by the (U.S.) Constitution (16th Amendment)</li><li>Civic duty</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "Constitution Center – 16th Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-xvi" }
   },
   {
     id: 72,
-    cat: "1800s",
-    q: "Name one war fought by the United States in the 1800s.",
-    a: "War of 1812; Mexican-American War; Civil War; Spanish-American War",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "It is important for all men age 18 through 25 to register for the Selective Service. Name one reason why.",
+    answer: "<ul><li>Required by law</li><li>Civic duty</li><li>Makes the draft fair, if needed</li></ul>",
+    category: "Rights and Responsibilities",
+    reference: { label: "SSS.gov – Selective Service System", href: "https://www.sss.gov/register/" }
   },
+
+  // ── AMERICAN HISTORY ─────────────────────────────────────────────────────────
+  // A: Colonial Period and Independence (Q73–Q89)
+
   {
     id: 73,
-    cat: "1800s",
-    q: "Name the U.S. war between the North and the South.",
-    a: "The Civil War; the War between the States",
-    ref: {
-      text: "Library of Congress — Civil War",
-      url: "https://www.loc.gov/collections/civil-war-maps/",
-    },
+    question: "The colonists came to America for many reasons. Name one.",
+    answer: "<ul><li>Freedom</li><li>Political liberty</li><li>Religious freedom</li><li>Economic opportunity</li><li>Escape persecution</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Library of Congress – Colonial America", href: "https://www.loc.gov/classroom-materials/united-states-history-primary-source-timeline/colonial-settlement-1600-1763/" }
   },
   {
     id: 74,
-    cat: "1800s",
-    q: "Name one problem that led to the Civil War.",
-    a: "Slavery; economic reasons; states' rights",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who lived in America before the Europeans arrived? ★",
+    answer: "<ul><li>American Indians</li><li>Native Americans</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "BIA.gov – American Indians", href: "https://www.bia.gov/bia" }
   },
   {
     id: 75,
-    cat: "1800s",
-    q: "What was one important thing that Abraham Lincoln did?",
-    a: "Freed the slaves (Emancipation Proclamation); saved (or preserved) the Union; led the United States during the Civil War",
-    ref: {
-      text: "Lincoln Memorial — NPS",
-      url: "https://www.nps.gov/linc/learn/historyculture/index.htm",
-    },
+    question: "What group of people was taken and sold as slaves?",
+    answer: "<ul><li>Africans</li><li>People from Africa</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Library of Congress – Slavery in America", href: "https://www.loc.gov/collections/slave-narratives-from-the-federal-writers-project-1936-to-1938/articles-and-essays/introduction-to-the-wpa-slave-narratives/" }
   },
   {
     id: 76,
-    cat: "1800s",
-    q: "What did the Emancipation Proclamation do?",
-    a: "Freed the slaves; freed slaves in the Confederacy; freed slaves in the Confederate states; freed slaves in most Southern states",
-    ref: {
-      text: "Archives.gov — Emancipation Proclamation",
-      url: "https://www.archives.gov/exhibits/featured-documents/emancipation-proclamation",
-    },
+    question: "What war did the Americans fight to win independence from Britain?",
+    answer: "<ul><li>American Revolution</li><li>The (American) Revolutionary War</li><li>War for (American) Independence</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "History.com – American Revolution", href: "https://www.history.com/topics/american-revolution/american-revolution-history" }
   },
   {
     id: 77,
-    cat: "1800s",
-    q: "What did Susan B. Anthony do?",
-    a: "Fought for women's rights; fought for civil rights",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Name one reason why the Americans declared independence from Britain.",
+    answer: "<ul><li>High taxes</li><li>Taxation without representation</li><li>British soldiers stayed in Americans' houses (boarding, quartering)</li><li>They did not have self-government</li><li>Boston Massacre</li><li>Boston Tea Party (Tea Act)</li><li>Stamp Act</li><li>Sugar Act</li><li>Townshend Acts</li><li>Intolerable (Coercive) Acts</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Archives.gov – Causes of the Revolution", href: "https://www.archives.gov/founding-docs/declaration" }
   },
-
-  // RECENT AMERICAN HISTORY
   {
     id: 78,
-    cat: "Recent History",
-    q: "Name one war fought by the United States in the 1900s.",
-    a: "World War I; World War II; Korean War; Vietnam War; (Persian) Gulf War",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who wrote the Declaration of Independence? ★",
+    answer: "<ul><li>(Thomas) Jefferson</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Archives.gov – Declaration of Independence", href: "https://www.archives.gov/founding-docs/declaration" }
   },
   {
     id: 79,
-    cat: "Recent History",
-    q: "Who was President during World War I?",
-    a: "(Woodrow) Wilson",
-    ref: {
-      text: "Whitehouse.gov — Woodrow Wilson",
-      url: "https://www.whitehouse.gov/about-the-white-house/presidents/woodrow-wilson/",
-    },
+    question: "When was the Declaration of Independence adopted?",
+    answer: "<ul><li>July 4, 1776</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Archives.gov – Declaration of Independence", href: "https://www.archives.gov/founding-docs/declaration" }
   },
   {
     id: 80,
-    cat: "Recent History",
-    q: "Who was President during the Great Depression and World War II?",
-    a: "(Franklin) Roosevelt",
-    ref: { text: "FDR Library", url: "https://www.fdrlibrary.org" },
+    question: "The American Revolution had many important events. Name one.",
+    answer: "<ul><li>(Battle of) Bunker Hill</li><li>Declaration of Independence</li><li>Washington Crossing the Delaware (Battle of Trenton)</li><li>(Battle of) Saratoga</li><li>Valley Forge (Encampment)</li><li>(Battle of) Yorktown (British surrender at Yorktown)</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "History.com – American Revolution Timeline", href: "https://www.history.com/topics/american-revolution/american-revolution-history" }
   },
   {
     id: 81,
-    cat: "Recent History",
-    q: "Who did the United States fight in World War II?",
-    a: "Japan, Germany, and Italy",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "There were 13 original states. Name five.",
+    answer: "<ul><li>New Hampshire</li><li>Massachusetts</li><li>Rhode Island</li><li>Connecticut</li><li>New York</li><li>New Jersey</li><li>Pennsylvania</li><li>Delaware</li><li>Maryland</li><li>Virginia</li><li>North Carolina</li><li>South Carolina</li><li>Georgia</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "History.com – Original 13 Colonies", href: "https://www.history.com/topics/colonial-america/thirteen-colonies" }
   },
   {
     id: 82,
-    cat: "Recent History",
-    q: "Before he was President, Eisenhower was a general. What war was he in?",
-    a: "World War II",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What founding document was written in 1787?",
+    answer: "<ul><li>(U.S.) Constitution</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Archives.gov – U.S. Constitution", href: "https://www.archives.gov/founding-docs/constitution" }
   },
   {
     id: 83,
-    cat: "Recent History",
-    q: "During the Cold War, what was the main concern of the United States?",
-    a: "Communism",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "The Federalist Papers supported the passage of the U.S. Constitution. Name one of the writers.",
+    answer: "<ul><li>(James) Madison</li><li>(Alexander) Hamilton</li><li>(John) Jay</li><li>Publius</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Library of Congress – Federalist Papers", href: "https://www.loc.gov/resource/rbc0001.2014rbc0001002/?st=gallery" }
   },
   {
     id: 84,
-    cat: "Recent History",
-    q: "What movement tried to end racial discrimination?",
-    a: "Civil rights (movement)",
-    ref: {
-      text: "Library of Congress — Civil Rights",
-      url: "https://www.loc.gov/collections/civil-rights-history-project/about-this-collection/",
-    },
+    question: "Why were the Federalist Papers important?",
+    answer: "<ul><li>They helped people understand the (U.S.) Constitution.</li><li>They supported passing the (U.S.) Constitution.</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Library of Congress – Federalist Papers", href: "https://www.congress.gov/resources/display/content/The+Federalist+Papers" }
   },
   {
     id: 85,
-    cat: "Recent History",
-    q: "What did Martin Luther King, Jr. do?",
-    a: "Fought for civil rights; worked for equality for all Americans",
-    ref: { text: "King Center", url: "https://thekingcenter.org" },
+    question: "Benjamin Franklin is famous for many things. Name one.",
+    answer: "<ul><li>Founded the first free public libraries</li><li>First Postmaster General of the United States</li><li>Helped write the Declaration of Independence</li><li>Inventor</li><li>U.S. diplomat</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Biography.com – Benjamin Franklin", href: "https://www.biography.com/political-figure/benjamin-franklin" }
   },
   {
     id: 86,
-    cat: "Recent History",
-    q: "What major event happened on September 11, 2001, in the United States?",
-    a: "Terrorists attacked the United States",
-    ref: { text: "9/11 Memorial", url: "https://www.911memorial.org" },
+    question: "George Washington is famous for many things. Name one. ★",
+    answer: "<ul><li>\"Father of Our Country\"</li><li>First president of the United States</li><li>General of the Continental Army</li><li>President of the Constitutional Convention</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "White House – George Washington", href: "https://www.whitehouse.gov/about-the-white-house/presidents/george-washington/" }
   },
   {
     id: 87,
-    cat: "Recent History",
-    q: "Name one American Indian tribe in the United States.",
-    a: "Cherokee; Navajo; Sioux; Chippewa; Choctaw; Pueblo; Apache; Iroquois; Creek; Blackfeet; Seminole; Cheyenne; Arawak; Shawnee; Mohegan; Huron; Oneida; Lakota; Crow; Teton; Hopi; Inuit",
-    ref: { text: "Bureau of Indian Affairs", url: "https://www.bia.gov" },
+    question: "Thomas Jefferson is famous for many things. Name one.",
+    answer: "<ul><li>Writer of the Declaration of Independence</li><li>Third president of the United States</li><li>Doubled the size of the United States (Louisiana Purchase)</li><li>First Secretary of State</li><li>Founded the University of Virginia</li><li>Writer of the Virginia Statute on Religious Freedom</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "White House – Thomas Jefferson", href: "https://www.whitehouse.gov/about-the-white-house/presidents/thomas-jefferson/" }
   },
-
-  // INTEGRATED CIVICS — Geography
   {
     id: 88,
-    cat: "Geography",
-    q: "Name one of the two longest rivers in the United States.",
-    a: "Missouri (River); Mississippi (River)",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "James Madison is famous for many things. Name one.",
+    answer: "<ul><li>\"Father of the Constitution\"</li><li>Fourth president of the United States</li><li>President during the War of 1812</li><li>One of the writers of the Federalist Papers</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "White House – James Madison", href: "https://www.whitehouse.gov/about-the-white-house/presidents/james-madison/" }
   },
   {
     id: 89,
-    cat: "Geography",
-    q: "What ocean is on the West Coast of the United States?",
-    a: "Pacific (Ocean)",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Alexander Hamilton is famous for many things. Name one.",
+    answer: "<ul><li>First Secretary of the Treasury</li><li>One of the writers of the Federalist Papers</li><li>Helped establish the First Bank of the United States</li><li>Aide to General George Washington</li><li>Member of the Continental Congress</li></ul>",
+    category: "Colonial Period and Independence",
+    reference: { label: "Treasury.gov – Alexander Hamilton", href: "https://home.treasury.gov/about/history/hamilton" }
   },
+
+  // B: 1800s (Q90–Q99)
+
   {
     id: 90,
-    cat: "Geography",
-    q: "What ocean is on the East Coast of the United States?",
-    a: "Atlantic (Ocean)",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What territory did the United States buy from France in 1803?",
+    answer: "<ul><li>Louisiana Territory</li><li>Louisiana</li></ul>",
+    category: "1800s",
+    reference: { label: "History.com – Louisiana Purchase", href: "https://www.history.com/topics/westward-expansion/louisiana-purchase" }
   },
   {
     id: 91,
-    cat: "Geography",
-    q: "Name one U.S. territory.",
-    a: "Puerto Rico; U.S. Virgin Islands; American Samoa; Northern Mariana Islands; Guam",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Name one war fought by the United States in the 1800s.",
+    answer: "<ul><li>War of 1812</li><li>Mexican-American War</li><li>Civil War</li><li>Spanish-American War</li></ul>",
+    category: "1800s",
+    reference: { label: "History.com – U.S. Wars", href: "https://www.history.com/topics/us-military-history" }
   },
   {
     id: 92,
-    cat: "Geography",
-    q: "Name one state that borders Canada.",
-    a: "Maine; New Hampshire; Vermont; New York; Pennsylvania; Ohio; Michigan; Minnesota; North Dakota; Montana; Idaho; Washington; Alaska",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Name the U.S. war between the North and the South.",
+    answer: "<ul><li>The Civil War</li></ul>",
+    category: "1800s",
+    reference: { label: "History.com – Civil War", href: "https://www.history.com/topics/american-civil-war/american-civil-war-history" }
   },
   {
     id: 93,
-    cat: "Geography",
-    q: "Name one state that borders Mexico.",
-    a: "California; Arizona; New Mexico; Texas",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "The Civil War had many important events. Name one.",
+    answer: "<ul><li>(Battle of) Fort Sumter</li><li>Emancipation Proclamation</li><li>(Battle of) Vicksburg</li><li>(Battle of) Gettysburg</li><li>Sherman's March</li><li>(Surrender at) Appomattox</li><li>(Battle of) Antietam/Sharpsburg</li><li>Lincoln was assassinated.</li></ul>",
+    category: "1800s",
+    reference: { label: "History.com – Civil War Timeline", href: "https://www.history.com/topics/american-civil-war/american-civil-war-history" }
   },
   {
     id: 94,
-    cat: "Geography",
-    q: "What is the capital of the United States?",
-    a: "Washington, D.C.",
-    ref: { text: "USA.gov", url: "https://www.usa.gov" },
+    question: "Abraham Lincoln is famous for many things. Name one. ★",
+    answer: "<ul><li>Freed the slaves (Emancipation Proclamation)</li><li>Saved (or preserved) the Union</li><li>Led the United States during the Civil War</li><li>16th president of the United States</li><li>Delivered the Gettysburg Address</li></ul>",
+    category: "1800s",
+    reference: { label: "White House – Abraham Lincoln", href: "https://www.whitehouse.gov/about-the-white-house/presidents/abraham-lincoln/" }
   },
   {
     id: 95,
-    cat: "Geography",
-    q: "Where is the Statue of Liberty?",
-    a: "New York (Harbor); Liberty Island; New Jersey; near New York City; on the Hudson (River)",
-    ref: {
-      text: "Statue of Liberty NPS",
-      url: "https://www.nps.gov/stli/index.htm",
-    },
+    question: "What did the Emancipation Proclamation do?",
+    answer: "<ul><li>Freed the slaves</li><li>Freed slaves in the Confederacy</li><li>Freed slaves in the Confederate states</li><li>Freed slaves in most Southern states</li></ul>",
+    category: "1800s",
+    reference: { label: "Archives.gov – Emancipation Proclamation", href: "https://www.archives.gov/exhibits/featured-documents/emancipation-proclamation" }
   },
-
-  // SYMBOLS AND HOLIDAYS
   {
     id: 96,
-    cat: "Symbols",
-    q: "Why does the flag have 13 stripes?",
-    a: "Because there were 13 original colonies; because the stripes represent the original colonies",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What U.S. war ended slavery?",
+    answer: "<ul><li>The Civil War</li></ul>",
+    category: "1800s",
+    reference: { label: "Constitution Center – 13th Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-xiii" }
   },
   {
     id: 97,
-    cat: "Symbols",
-    q: "Why does the flag have 50 stars?",
-    a: "Because there is one star for each state; because each star represents a state; because there are 50 states",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What amendment gives citizenship to all persons born in the United States?",
+    answer: "<ul><li>14th Amendment</li></ul><p><em>Note (2025 version): The 14th Amendment includes the clause \"subject to the jurisdiction thereof.\"</em></p>",
+    category: "1800s",
+    reference: { label: "Constitution Center – 14th Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-xiv" }
   },
   {
     id: 98,
-    cat: "Symbols",
-    q: "What is the name of the national anthem?",
-    a: "The Star-Spangled Banner",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "When did all men get the right to vote?",
+    answer: "<ul><li>After the Civil War</li><li>During Reconstruction</li><li>(With the) 15th Amendment</li><li>1870</li></ul>",
+    category: "1800s",
+    reference: { label: "Constitution Center – 15th Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-xv" }
   },
   {
     id: 99,
-    cat: "Symbols",
-    q: "What do we celebrate on the Fourth of July?",
-    a: "Independence Day; independence of the United States",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Name one leader of the women's rights movement in the 1800s.",
+    answer: "<ul><li>Susan B. Anthony</li><li>Elizabeth Cady Stanton</li><li>Sojourner Truth</li><li>Harriet Tubman</li><li>Lucretia Mott</li><li>Lucy Stone</li></ul>",
+    category: "1800s",
+    reference: { label: "History.com – Women's Suffrage", href: "https://www.history.com/topics/womens-history/the-fight-for-womens-suffrage" }
   },
 
-  // NEW 2025 QUESTIONS
+  // C: Recent American History and Other Important Historical Information (Q100–Q118)
+
   {
     id: 100,
-    cat: "2025 New",
-    q: "What is the name of the President of the United States? (2025 version)",
-    a: "Donald J. Trump",
-    ref: {
-      text: "Whitehouse.gov",
-      url: "https://www.whitehouse.gov/administration/donald-j-trump/",
-    },
+    question: "Name one war fought by the United States in the 1900s.",
+    answer: "<ul><li>World War I</li><li>World War II</li><li>Korean War</li><li>Vietnam War</li><li>(Persian) Gulf War</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – U.S. Military History", href: "https://www.history.com/topics/us-military-history" }
   },
   {
     id: 101,
-    cat: "2025 New",
-    q: "What is the name of the Vice President of the United States? (2025 version)",
-    a: "JD Vance",
-    ref: {
-      text: "Whitehouse.gov",
-      url: "https://www.whitehouse.gov/administration/jd-vance/",
-    },
+    question: "Why did the United States enter World War I?",
+    answer: "<ul><li>Because Germany attacked U.S. (civilian) ships</li><li>To support the Allied Powers (England, France, Italy, and Russia)</li><li>To oppose the Central Powers (Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria)</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – World War I", href: "https://www.history.com/topics/world-war-i/world-war-i-history" }
   },
   {
     id: 102,
-    cat: "2025 New",
-    q: "What is the name of the Speaker of the House now? (2025 version)",
-    a: "Mike Johnson",
-    ref: { text: "speaker.gov", url: "https://www.speaker.gov" },
+    question: "When did all women get the right to vote?",
+    answer: "<ul><li>1920</li><li>After World War I</li><li>(With the) 19th Amendment</li></ul>",
+    category: "Recent American History",
+    reference: { label: "Constitution Center – 19th Amendment", href: "https://constitutioncenter.org/the-constitution/amendments/amendment-xix" }
   },
   {
     id: 103,
-    cat: "Principles",
-    q: "What is the supreme law of the land?",
-    a: "The Constitution",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What was the Great Depression?",
+    answer: "<ul><li>Longest economic recession in modern history</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – The Great Depression", href: "https://www.history.com/topics/great-depression/great-depression-history" }
   },
   {
     id: 104,
-    cat: "Rights",
-    q: "Name one right guaranteed by the First Amendment.",
-    a: "Freedom of speech, religion, assembly, press, or the right to petition the government",
-    ref: {
-      text: "First Amendment — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/bill-of-rights/what-does-it-say",
-    },
+    question: "When did the Great Depression start?",
+    answer: "<ul><li>The Great Crash (1929)</li><li>Stock market crash of 1929</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – The Great Depression", href: "https://www.history.com/topics/great-depression/great-depression-history" }
   },
   {
     id: 105,
-    cat: "Government",
-    q: "The Constitution protects freedom of religion. What is one way religious freedom is protected?",
-    a: "Congress cannot establish an official religion; Americans are free to practice any religion or no religion at all",
-    ref: {
-      text: "First Amendment — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/bill-of-rights/what-does-it-say",
-    },
+    question: "Who was president during the Great Depression and World War II?",
+    answer: "<ul><li>(Franklin) Roosevelt</li></ul>",
+    category: "Recent American History",
+    reference: { label: "White House – Franklin D. Roosevelt", href: "https://www.whitehouse.gov/about-the-white-house/presidents/franklin-d-roosevelt/" }
   },
   {
     id: 106,
-    cat: "Government",
-    q: "How many years is a Senator's term?",
-    a: "Six (6) years",
-    ref: { text: "senate.gov", url: "https://www.senate.gov" },
+    question: "Why did the United States enter World War II?",
+    answer: "<ul><li>(Bombing of) Pearl Harbor</li><li>Japanese attacked Pearl Harbor</li><li>To support the Allied Powers (England, France, and Russia)</li><li>To oppose the Axis Powers (Germany, Italy, and Japan)</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – World War II", href: "https://www.history.com/topics/world-war-ii/world-war-ii-history" }
   },
   {
     id: 107,
-    cat: "Government",
-    q: "How many years is a Representative's term in Congress?",
-    a: "Two (2) years",
-    ref: { text: "house.gov", url: "https://www.house.gov" },
+    question: "Dwight Eisenhower is famous for many things. Name one.",
+    answer: "<ul><li>General during World War II</li><li>President at the end of (during) the Korean War</li><li>34th president of the United States</li><li>Signed the Federal-Aid Highway Act of 1956 (Created the Interstate System)</li></ul>",
+    category: "Recent American History",
+    reference: { label: "White House – Dwight D. Eisenhower", href: "https://www.whitehouse.gov/about-the-white-house/presidents/dwight-d-eisenhower/" }
   },
   {
     id: 108,
-    cat: "Government",
-    q: "How many years is a Presidential term?",
-    a: "Four (4) years",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Who was the United States' main rival during the Cold War?",
+    answer: "<ul><li>Soviet Union</li><li>USSR</li><li>Russia</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – Cold War", href: "https://www.history.com/topics/cold-war/cold-war-history" }
   },
   {
     id: 109,
-    cat: "Government",
-    q: "How many terms can a President serve?",
-    a: "Two (2)",
-    ref: {
-      text: "22nd Amendment — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/amendments-11-27",
-    },
+    question: "During the Cold War, what was one main concern of the United States?",
+    answer: "<ul><li>Communism</li><li>Nuclear war</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – Cold War", href: "https://www.history.com/topics/cold-war/cold-war-history" }
   },
   {
     id: 110,
-    cat: "Rights",
-    q: "What amendment gives citizens the right to bear arms?",
-    a: "The Second Amendment",
-    ref: {
-      text: "Bill of Rights — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/bill-of-rights",
-    },
+    question: "Why did the United States enter the Korean War?",
+    answer: "<ul><li>To stop the spread of communism</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – Korean War", href: "https://www.history.com/topics/korea/korean-war" }
   },
   {
     id: 111,
-    cat: "Rights",
-    q: "What amendment abolished slavery?",
-    a: "The Thirteenth Amendment (13th Amendment)",
-    ref: {
-      text: "Archives.gov — Amendments",
-      url: "https://www.archives.gov/founding-docs/amendments-11-27",
-    },
+    question: "Why did the United States enter the Vietnam War?",
+    answer: "<ul><li>To stop the spread of communism</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – Vietnam War", href: "https://www.history.com/topics/vietnam-war/vietnam-war-history" }
   },
   {
     id: 112,
-    cat: "Rights",
-    q: "What amendment gave women the right to vote?",
-    a: "The Nineteenth Amendment (19th Amendment)",
-    ref: {
-      text: "Archives.gov — 19th Amendment",
-      url: "https://www.archives.gov/founding-docs/amendments-11-27",
-    },
+    question: "What did the civil rights movement do?",
+    answer: "<ul><li>Fought to end racial discrimination</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – Civil Rights Movement", href: "https://www.history.com/topics/black-history/civil-rights-movement" }
   },
   {
     id: 113,
-    cat: "Rights",
-    q: "What amendment lowered the voting age to 18?",
-    a: "The Twenty-sixth Amendment (26th Amendment)",
-    ref: {
-      text: "Archives.gov — Amendments",
-      url: "https://www.archives.gov/founding-docs/amendments-11-27",
-    },
+    question: "Martin Luther King, Jr. is famous for many things. Name one. ★",
+    answer: "<ul><li>Fought for civil rights</li><li>Worked for equality for all Americans</li><li>Worked to ensure that people would not be judged by the color of their skin, but by the content of their character</li></ul>",
+    category: "Recent American History",
+    reference: { label: "MLK Memorial – King's Legacy", href: "https://www.nps.gov/mlkm/learn/index.htm" }
   },
   {
     id: 114,
-    cat: "Principles",
-    q: "What are the three branches of government?",
-    a: "Legislative (Congress), Executive (President), and Judicial (Supreme Court)",
-    ref: {
-      text: "USA.gov — Three Branches",
-      url: "https://www.usa.gov/branches-of-government",
-    },
+    question: "Why did the United States enter the Persian Gulf War?",
+    answer: "<ul><li>To force the Iraqi military from Kuwait</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – Persian Gulf War", href: "https://www.history.com/topics/middle-east/persian-gulf-war" }
   },
   {
     id: 115,
-    cat: "Government",
-    q: "What is the role of Congress?",
-    a: "To make federal laws",
-    ref: { text: "Congress.gov", url: "https://www.congress.gov" },
+    question: "What major event happened on September 11, 2001 in the United States? ★",
+    answer: "<ul><li>Terrorists attacked the United States</li><li>Terrorists took over two planes and crashed them into the World Trade Center in New York City</li><li>Terrorists took over a plane and crashed into the Pentagon in Arlington, Virginia</li><li>Terrorists took over a plane originally aimed at Washington, D.C., and crashed in a field in Pennsylvania</li></ul>",
+    category: "Recent American History",
+    reference: { label: "9/11 Memorial – About the 9/11 Attacks", href: "https://www.911memorial.org/learn/resources/education/educational-topics/frequently-asked-questions-about-911" }
   },
   {
     id: 116,
-    cat: "Government",
-    q: "What is one power of Congress?",
-    a: "To declare war; to make laws; to approve the federal budget; to confirm presidential appointments",
-    ref: { text: "Congress.gov", url: "https://www.congress.gov" },
+    question: "Name one U.S. military conflict after the September 11, 2001 attacks.",
+    answer: "<ul><li>(Global) War on Terror</li><li>War in Afghanistan</li><li>War in Iraq</li></ul>",
+    category: "Recent American History",
+    reference: { label: "History.com – War in Afghanistan", href: "https://www.history.com/topics/21st-century/afghanistan-war-history" }
   },
   {
     id: 117,
-    cat: "1800s",
-    q: "What was the Reconstruction period?",
-    a: "The period after the Civil War when the South was rebuilt and reunited with the United States",
-    ref: {
-      text: "Library of Congress — Reconstruction",
-      url: "https://www.loc.gov/exhibits/civil-war-soldiers-and-sailors/reconstruction.html",
-    },
+    question: "Name one American Indian tribe in the United States.",
+    answer: "<ul><li>Apache</li><li>Blackfeet</li><li>Cayuga</li><li>Cherokee</li><li>Cheyenne</li><li>Chippewa</li><li>Choctaw</li><li>Creek</li><li>Crow</li><li>Hopi</li><li>Huron</li><li>Inupiat</li><li>Lakota</li><li>Mohawk</li><li>Mohegan</li><li>Navajo</li><li>Oneida</li><li>Onondaga</li><li>Pueblo</li><li>Seminole</li><li>Seneca</li><li>Shawnee</li><li>Sioux</li><li>Teton</li><li>Tuscarora</li></ul><p><em>For a complete list of federally recognized tribes, visit <a href='https://www.bia.gov'>bia.gov</a>.</em></p>",
+    category: "Recent American History",
+    reference: { label: "BIA.gov – Indian Tribes", href: "https://www.bia.gov/service/tribal-leaders-directory" }
   },
   {
     id: 118,
-    cat: "Recent History",
-    q: "Who was the first African American President of the United States?",
-    a: "Barack Obama",
-    ref: {
-      text: "Obama Presidential Library",
-      url: "https://www.obamalibrary.gov",
-    },
+    question: "Name one example of an American innovation.",
+    answer: "<ul><li>Light bulb</li><li>Automobile (cars, combustible engine)</li><li>Skyscrapers</li><li>Airplane</li><li>Assembly line</li><li>Landing on the moon</li><li>Integrated circuit (IC)</li></ul>",
+    category: "Recent American History",
+    reference: { label: "Smithsonian – American Inventions", href: "https://americanhistory.si.edu/collections/subjects/inventions-technology" }
   },
+
+  // ── SYMBOLS AND HOLIDAYS ─────────────────────────────────────────────────────
+  // A: Symbols (Q119–Q124)
+
   {
     id: 119,
-    cat: "Principles",
-    q: "What document established the U.S. government after independence?",
-    a: "The Constitution",
-    ref: {
-      text: "Archives.gov — Constitution",
-      url: "https://www.archives.gov/founding-docs/constitution",
-    },
+    question: "What is the capital of the United States?",
+    answer: "<ul><li>Washington, D.C.</li></ul>",
+    category: "Symbols",
+    reference: { label: "Washington D.C. – Official Site", href: "https://dc.gov/" }
   },
   {
     id: 120,
-    cat: "Colonial Era",
-    q: "What was the purpose of the Mayflower Compact?",
-    a: "It was the first form of self-government in America / an agreement made by the Pilgrims for governing themselves",
-    ref: {
-      text: "Pilgrim Hall Museum",
-      url: "https://www.pilgrimhall.org/mayflowercompact.htm",
-    },
+    question: "Where is the Statue of Liberty?",
+    answer: "<ul><li>New York (Harbor)</li><li>Liberty Island</li><li>Also acceptable: New Jersey, near New York City, and on the Hudson (River)</li></ul>",
+    category: "Symbols",
+    reference: { label: "NPS – Statue of Liberty", href: "https://www.nps.gov/stli/index.htm" }
   },
   {
     id: 121,
-    cat: "Geography",
-    q: "How many states are in the United States?",
-    a: "Fifty (50)",
-    ref: { text: "USA.gov", url: "https://www.usa.gov" },
+    question: "Why does the flag have 13 stripes? ★",
+    answer: "<ul><li>(Because there were) 13 original colonies</li><li>(Because the stripes) represent the original colonies</li></ul>",
+    category: "Symbols",
+    reference: { label: "USA.gov – American Flag", href: "https://www.usa.gov/american-flag" }
   },
   {
     id: 122,
-    cat: "Symbols",
-    q: "What are the colors of the U.S. flag?",
-    a: "Red, white, and blue",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "Why does the flag have 50 stars?",
+    answer: "<ul><li>(Because there is) one star for each state</li><li>(Because) each star represents a state</li><li>(Because there are) 50 states</li></ul>",
+    category: "Symbols",
+    reference: { label: "USA.gov – American Flag", href: "https://www.usa.gov/american-flag" }
   },
   {
     id: 123,
-    cat: "Symbols",
-    q: "What Independence Day celebrates the birthday of what country?",
-    a: "The United States of America",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "What is the name of the national anthem?",
+    answer: "<ul><li>The Star-Spangled Banner</li></ul>",
+    category: "Symbols",
+    reference: { label: "Smithsonian – The Star-Spangled Banner", href: "https://americanhistory.si.edu/star-spangled-banner" }
   },
   {
     id: 124,
-    cat: "Rights",
-    q: "What is one duty of a U.S. citizen?",
-    a: "Pay taxes; serve on a jury; vote; obey the law; serve in the military if called",
-    ref: {
-      text: "USCIS Study Guide",
-      url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test",
-    },
+    question: "The Nation's first motto was \"E Pluribus Unum.\" What does that mean?",
+    answer: "<ul><li>Out of many, one</li><li>We all become one</li></ul>",
+    category: "Symbols",
+    reference: { label: "USA.gov – National Motto", href: "https://www.usa.gov/national-symbols" }
   },
+
+  // B: Holidays (Q125–Q128)
+
   {
     id: 125,
-    cat: "Principles",
-    q: "What is the Preamble to the Constitution?",
-    a: "The introduction to the Constitution that states its purpose and principles; it begins 'We the People...'",
-    ref: {
-      text: "Constitution — Archives.gov",
-      url: "https://www.archives.gov/founding-docs/constitution-transcript",
-    },
+    question: "What is Independence Day?",
+    answer: "<ul><li>A holiday to celebrate U.S. independence (from Britain)</li><li>The country's birthday</li></ul>",
+    category: "Holidays",
+    reference: { label: "History.com – Independence Day", href: "https://www.history.com/topics/holidays/july-4th" }
   },
   {
     id: 126,
-    cat: "Government",
-    q: "How are Supreme Court justices chosen?",
-    a: "They are appointed by the President and confirmed by the Senate",
-    ref: {
-      text: "Supreme Court — supremecourt.gov",
-      url: "https://www.supremecourt.gov/about/biographies.aspx",
-    },
+    question: "Name three national U.S. holidays. ★",
+    answer: "<ul><li>New Year's Day</li><li>Martin Luther King, Jr. Day</li><li>Presidents Day (Washington's Birthday)</li><li>Memorial Day</li><li>Independence Day</li><li>Labor Day</li><li>Columbus Day</li><li>Veterans Day</li><li>Thanksgiving Day</li><li>Christmas Day</li></ul>",
+    category: "Holidays",
+    reference: { label: "OPM.gov – Federal Holidays", href: "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/" }
   },
   {
     id: 127,
-    cat: "Government",
-    q: "How long do Supreme Court justices serve?",
-    a: "For life (lifetime appointment)",
-    ref: {
-      text: "Supreme Court — supremecourt.gov",
-      url: "https://www.supremecourt.gov",
-    },
+    question: "What is Memorial Day?",
+    answer: "<ul><li>A holiday to honor soldiers who died in military service</li></ul>",
+    category: "Holidays",
+    reference: { label: "VA.gov – Memorial Day", href: "https://www.va.gov/opa/speceven/memday/" }
   },
   {
     id: 128,
-    cat: "Recent History",
-    q: "What is the name of the national holiday celebrated on the third Monday of January honoring a civil rights leader?",
-    a: "Martin Luther King, Jr. Day",
-    ref: { text: "King Center", url: "https://thekingcenter.org" },
-  },
+    question: "What is Veterans Day?",
+    answer: "<ul><li>A holiday to honor people in the (U.S.) military</li><li>A holiday to honor people who have served (in the U.S. military)</li></ul>",
+    category: "Holidays",
+    reference: { label: "VA.gov – Veterans Day", href: "https://www.va.gov/opa/vetsday/" }
+  }
 ];
+

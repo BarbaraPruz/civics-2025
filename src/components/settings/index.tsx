@@ -13,19 +13,19 @@ const selectStyles = {
   control: (provided: CSSObjectWithLabel) => ({
     ...provided,
     fontSize: "18px",
-    width: 175,
+    width: 400,
   }),
   option: (provided: CSSObjectWithLabel) => ({
     ...provided,
     color: "#000000",
     fontSize: "18px",
-    width: 175,
+    width: 400,
   }),
   singleValue: (provided: CSSObjectWithLabel) => ({
     ...provided,
     color: "#000000",
     fontSize: "18px",
-    width: 175,
+    width: 400,
   }),
 };
 
@@ -48,9 +48,9 @@ const Settings = () => {
   const handleResetRetryList = () => resetRetryList();
 
   return (
-    <div className="w-[95vw] md:w-2xl my-4 mx-auto p-4 bg-(--color-steel-blue) rounded m-auto">
-      <div className="text-white flex flex-col md:flex-row gap-4 items-center">
-        <div className="flex items-center">
+    <div className="md:w-2xl my-4 mx-auto p-4 bg-(--color-steel-blue) rounded m-auto">
+      <div className="text-white">
+        <div className="flex flex-col md:flex-row md:gap-2">
           <label
             htmlFor="categorySelect"
             className={`text-lg block fw-semibold pr-1`}
@@ -58,7 +58,7 @@ const Settings = () => {
             Category
           </label>
           <Select
-            className="basic-single"
+            className="basic-single max-w-[95vw]"
             classNamePrefix="select"
             value={
               categoryOptions.find((opt) => opt.value === category) ?? null
@@ -71,7 +71,7 @@ const Settings = () => {
           />
         </div>
         {retryList.size > 0 && (
-          <div>
+          <div className="mt-2 w-full flex flex-col gap:1 md:flex-row md:items-center md:justify-between">
             <label className="inline-flex items-center cursor-pointer">
               <span className="select-none ms-3 text-lg font-medium text-heading me-1">
                 All Questions
@@ -97,7 +97,7 @@ const Settings = () => {
             </label>
             <button
               onClick={handleResetRetryList}
-              className="w-sm bg-(--color-red-accent) text-white text-xl rounded-lg"
+              className="px-2 py-1 bg-(--color-red-accent) text-white text-xl rounded-lg"
             >
               <span>Reset Retry List (Count {retryList.size})</span>
             </button>

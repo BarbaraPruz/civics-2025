@@ -10,7 +10,7 @@ function assignDeck(category: Category, qs: Question[]) {
   return shuffleQuestions(
     category === Categories.AllQuestions
       ? [...qs]
-      : qs.filter((q) => q.cat === category),
+      : qs.filter((q) => q.category === category),
   );
 }
 

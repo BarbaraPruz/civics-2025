@@ -1,13 +1,13 @@
 import type { Category } from "./category";
 
 export type Ref = {
-  text: string;
-  url: string;
+  label: string;
+  href: string;
 };
 export type Question = {
   id: number;
-  cat: Category;
-  q: string;
-  a: string;
-  ref: Ref;
+  category: Category;
+  question: string;
+  answer: string;
+  reference: Ref;
 };
