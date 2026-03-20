@@ -40,6 +40,11 @@ h3 {
   @apply text-2xl text-white font-bold;
 }
 
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
 .subtitle {
   @apply text-base text-slate-400 uppercase;
 }

@@ -24,13 +24,13 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
       </div>
       <div className="mt-4 text-center">
         {showAnswer ? (
-          <div>
+          <div className="text-left">
             <p className="subtitle text-left">Answer</p>
             <p
               className="text-2xl"
               dangerouslySetInnerHTML={{ __html: question.answer }}
             />
-            <p className="mt-2">
+            <p className="mt-1 mb-2">
               Learn more:{" "}
               <a
                 className="underline text-blue-500 text-base"

@@ -19,7 +19,7 @@ export const questions: Question[] = [
   },
   {
     id: 2,
-    question: "What is the supreme law of the land? ★",
+    question: "What is the supreme law of the land?", //*
     answer: "<ul><li>(U.S.) Constitution</li></ul>",
     category: "Principles of American Government",
     reference: { label: "Constitution Center – The U.S. Constitution", href: "https://constitutioncenter.org/the-constitution" }
@@ -54,7 +54,7 @@ export const questions: Question[] = [
   },
   {
     id: 7,
-    question: "How many amendments does the U.S. Constitution have? ★",
+    question: "How many amendments does the U.S. Constitution have?",//*
     answer: "<ul><li>Twenty-seven (27)</li></ul>",
     category: "Principles of American Government",
     reference: { label: "Constitution Center – The Amendments", href: "https://constitutioncenter.org/the-constitution/amendments" }
@@ -89,7 +89,7 @@ export const questions: Question[] = [
   },
   {
     id: 12,
-    question: "What is the economic system of the United States? ★",
+    question: "What is the economic system of the United States?", //*
     answer: "<ul><li>Capitalism</li><li>Free market economy</li></ul>",
     category: "Principles of American Government",
     reference: { label: "Investopedia – Capitalism", href: "https://www.investopedia.com/terms/c/capitalism.asp" }
@@ -148,7 +148,7 @@ export const questions: Question[] = [
   },
   {
     id: 20,
-    question: "Name one power of the U.S. Congress. ★",
+    question: "Name one power of the U.S. Congress.",//*
     answer: "<ul><li>Writes laws</li><li>Declares war</li><li>Makes the federal budget</li></ul>",
     category: "System of Government",
     reference: { label: "Congress.gov – Powers of Congress", href: "https://www.congress.gov/about" }
@@ -218,10 +218,10 @@ export const questions: Question[] = [
   },
   {
     id: 30,
-    question: "What is the name of the Speaker of the House of Representatives now? ★",
-    answer: "<p>Visit <a href='https://www.uscis.gov/citizenship/testupdates'>uscis.gov/citizenship/testupdates</a> for the current name of the Speaker of the House of Representatives.</p>",
+    question: "What is the name of the Speaker of the House of Representatives now?",
+    answer: "<p>Visit <a href='https://www.house.gov/leadership' target='_blank'>House Leadership</a> for the current name of the Speaker of the House of Representatives.</p>",
     category: "System of Government",
-    reference: { label: "USCIS – Civics Test Updates", href: "https://www.uscis.gov/citizenship/testupdates" }
+    reference: { label: "House Leadership", href: "https://www.house.gov/leadership" }
   },
   {
     id: 31,
@@ -260,7 +260,7 @@ export const questions: Question[] = [
   },
   {
     id: 36,
-    question: "The President of the United States is elected for how many years? ★",
+    question: "The President of the United States is elected for how many years?",//*
     answer: "<ul><li>Four (4) years</li></ul>",
     category: "System of Government",
     reference: { label: "White House – The Executive Branch", href: "https://www.whitehouse.gov/about-the-white-house/our-government/the-executive-branch/" }
@@ -274,17 +274,17 @@ export const questions: Question[] = [
   },
   {
     id: 38,
-    question: "What is the name of the President of the United States now? ★",
-    answer: "<p>Visit <a href='https://www.uscis.gov/citizenship/testupdates'>uscis.gov/citizenship/testupdates</a> for the current President's name.</p>",
+    question: "What is the name of the President of the United States now?",//*
+    answer: "<p>Visit <a href='https://www.usa.gov/presidents' target='_blank'>USA Presidents</a> for the current President's name.</p>",
     category: "System of Government",
-    reference: { label: "USCIS – Civics Test Updates", href: "https://www.uscis.gov/citizenship/testupdates" }
+    reference: { label: "USA Presidents", href: "https://www.usa.gov/presidents" }
   },
   {
     id: 39,
-    question: "What is the name of the Vice President of the United States now? ★",
-    answer: "<p>Visit <a href='https://www.uscis.gov/citizenship/testupdates'>uscis.gov/citizenship/testupdates</a> for the current Vice President's name.</p>",
+    question: "What is the name of the Vice President of the United States now?",//*
+    answer: "<p>Visit <a href='https://www.usa.gov/presidents' target='_blank'>USA Presidents</a> for the current Vice President's name.</p>",
     category: "System of Government",
-    reference: { label: "USCIS – Civics Test Updates", href: "https://www.uscis.gov/citizenship/testupdates" }
+    reference: { label: "USA Presidents", href: "https://www.usa.gov/presidents" }
   },
   {
     id: 40,
@@ -316,7 +316,7 @@ export const questions: Question[] = [
   },
   {
     id: 44,
-    question: "Who vetoes bills? ★",
+    question: "Who vetoes bills?", // *
     answer: "<ul><li>The President (of the United States)</li></ul>",
     category: "System of Government",
     reference: { label: "Congress.gov – Presidential Veto", href: "https://www.congress.gov/help/legislation-and-records" }
@@ -372,7 +372,7 @@ export const questions: Question[] = [
   },
   {
     id: 52,
-    question: "What is the highest court in the United States? ★",
+    question: "What is the highest court in the United States?",//*
     answer: "<ul><li>Supreme Court</li></ul>",
     category: "System of Government",
     reference: { label: "Supreme Court – About the Court", href: "https://www.supremecourt.gov/about/about.aspx" }
@@ -408,9 +408,9 @@ export const questions: Question[] = [
   {
     id: 57,
     question: "Who is the Chief Justice of the United States now?",
-    answer: "<p>Visit <a href='https://www.uscis.gov/citizenship/testupdates'>uscis.gov/citizenship/testupdates</a> for the current Chief Justice's name.</p>",
+    answer: "<p>Visit <a href='https://www.supremecourt.gov/about/justices.aspx' target='_blank'>About the Supreme Court</a> for the current Chief Justice's name.</p>",
     category: "System of Government",
-    reference: { label: "USCIS – Civics Test Updates", href: "https://www.uscis.gov/citizenship/testupdates" }
+    reference: { label: "About the Supreme Court", href: "https://www.supremecourt.gov/about/justices.aspx" }
   },
   {
     id: 58,
@@ -435,7 +435,7 @@ export const questions: Question[] = [
   },
   {
     id: 61,
-    question: "Who is the governor of your state now? ★",
+    question: "Who is the governor of your state now?",//*
     answer: "<p><em>Answers will vary.</em> District of Columbia residents should answer that D.C. does not have a governor.</p>",
     category: "System of Government",
     reference: { label: "NGA – Find Your Governor", href: "https://www.nga.org/governors/" }
@@ -473,7 +473,7 @@ export const questions: Question[] = [
   },
   {
     id: 66,
-    question: "What do we show loyalty to when we say the Pledge of Allegiance? ★",
+    question: "What do we show loyalty to when we say the Pledge of Allegiance?",//*
     answer: "<ul><li>The United States</li><li>The flag</li></ul>",
     category: "Rights and Responsibilities",
     reference: { label: "USA.gov – Pledge of Allegiance", href: "https://www.usa.gov/national-symbols" }
@@ -533,7 +533,7 @@ export const questions: Question[] = [
   },
   {
     id: 74,
-    question: "Who lived in America before the Europeans arrived? ★",
+    question: "Who lived in America before the Europeans arrived?",//*
     answer: "<ul><li>American Indians</li><li>Native Americans</li></ul>",
     category: "Colonial Period and Independence",
     reference: { label: "BIA.gov – American Indians", href: "https://www.bia.gov/bia" }
@@ -561,7 +561,7 @@ export const questions: Question[] = [
   },
   {
     id: 78,
-    question: "Who wrote the Declaration of Independence? ★",
+    question: "Who wrote the Declaration of Independence?",//*
     answer: "<ul><li>(Thomas) Jefferson</li></ul>",
     category: "Colonial Period and Independence",
     reference: { label: "Archives.gov – Declaration of Independence", href: "https://www.archives.gov/founding-docs/declaration" }
@@ -617,7 +617,7 @@ export const questions: Question[] = [
   },
   {
     id: 86,
-    question: "George Washington is famous for many things. Name one. ★",
+    question: "George Washington is famous for many things. Name one.",//*
     answer: "<ul><li>\"Father of Our Country\"</li><li>First president of the United States</li><li>General of the Continental Army</li><li>President of the Constitutional Convention</li></ul>",
     category: "Colonial Period and Independence",
     reference: { label: "White House – George Washington", href: "https://www.whitehouse.gov/about-the-white-house/presidents/george-washington/" }
@@ -676,7 +676,7 @@ export const questions: Question[] = [
   },
   {
     id: 94,
-    question: "Abraham Lincoln is famous for many things. Name one. ★",
+    question: "Abraham Lincoln is famous for many things. Name one.",//*
     answer: "<ul><li>Freed the slaves (Emancipation Proclamation)</li><li>Saved (or preserved) the Union</li><li>Led the United States during the Civil War</li><li>16th president of the United States</li><li>Delivered the Gettysburg Address</li></ul>",
     category: "1800s",
     reference: { label: "White House – Abraham Lincoln", href: "https://www.whitehouse.gov/about-the-white-house/presidents/abraham-lincoln/" }
@@ -812,7 +812,7 @@ export const questions: Question[] = [
   },
   {
     id: 113,
-    question: "Martin Luther King, Jr. is famous for many things. Name one. ★",
+    question: "Martin Luther King, Jr. is famous for many things. Name one.", //*
     answer: "<ul><li>Fought for civil rights</li><li>Worked for equality for all Americans</li><li>Worked to ensure that people would not be judged by the color of their skin, but by the content of their character</li></ul>",
     category: "Recent American History",
     reference: { label: "MLK Memorial – King's Legacy", href: "https://www.nps.gov/mlkm/learn/index.htm" }
@@ -826,7 +826,7 @@ export const questions: Question[] = [
   },
   {
     id: 115,
-    question: "What major event happened on September 11, 2001 in the United States? ★",
+    question: "What major event happened on September 11, 2001 in the United States?",//*
     answer: "<ul><li>Terrorists attacked the United States</li><li>Terrorists took over two planes and crashed them into the World Trade Center in New York City</li><li>Terrorists took over a plane and crashed into the Pentagon in Arlington, Virginia</li><li>Terrorists took over a plane originally aimed at Washington, D.C., and crashed in a field in Pennsylvania</li></ul>",
     category: "Recent American History",
     reference: { label: "9/11 Memorial – About the 9/11 Attacks", href: "https://www.911memorial.org/learn/resources/education/educational-topics/frequently-asked-questions-about-911" }
@@ -872,7 +872,7 @@ export const questions: Question[] = [
   },
   {
     id: 121,
-    question: "Why does the flag have 13 stripes? ★",
+    question: "Why does the flag have 13 stripes?",//*
     answer: "<ul><li>(Because there were) 13 original colonies</li><li>(Because the stripes) represent the original colonies</li></ul>",
     category: "Symbols",
     reference: { label: "USA.gov – American Flag", href: "https://www.usa.gov/american-flag" }
@@ -910,7 +910,7 @@ export const questions: Question[] = [
   },
   {
     id: 126,
-    question: "Name three national U.S. holidays. ★",
+    question: "Name three national U.S. holidays.",//*
     answer: "<ul><li>New Year's Day</li><li>Martin Luther King, Jr. Day</li><li>Presidents Day (Washington's Birthday)</li><li>Memorial Day</li><li>Independence Day</li><li>Labor Day</li><li>Columbus Day</li><li>Veterans Day</li><li>Thanksgiving Day</li><li>Christmas Day</li></ul>",
     category: "Holidays",
     reference: { label: "OPM.gov – Federal Holidays", href: "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/" }
