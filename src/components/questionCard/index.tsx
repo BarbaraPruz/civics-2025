@@ -26,7 +26,7 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
         {showAnswer ? (
           <div>
             <p className="subtitle text-left">Answer</p>
-            <p className="text-2xl">{question.a}</p>
+            <p className="text-2xl" dangerouslySetInnerHTML={{ __html: question.a }} />
             <p className="mt-2">
               Learn more:{" "}
               <a
