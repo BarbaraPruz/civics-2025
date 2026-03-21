@@ -1,10 +1,11 @@
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useState } from "react";
 import Score from "@/components/score";
 import QuestionCard from "../questionCard";
 import useAppStore from "@/store/useAppStore";
 import { questions } from "@/constants/questions";
 import { Categories, type Category } from "@/types/category";
 import { type Question } from "@/types/question";
+import FireworksOverlay from "../fireworksOverlay";
 
 function assignDeck(category: Category, qs: Question[]) {
   return shuffleQuestions(
@@ -53,6 +54,9 @@ const Quiz = ({ onGameOver }: QuizProps) => {
     [],
   );
   const [deckIndex, setDeckIndex] = useState(0);
+  const [showFireworks, setShowFireworks] = useState(false);
+
+  const handlePass = useCallback(()=>setShowFireworks(true),[]);
 
   const handleReset = () => {
     reset();
@@ -85,8 +89,10 @@ const Quiz = ({ onGameOver }: QuizProps) => {
 
   return (
     <div className="w-[95vw] md:w-2xl m-auto">
-      <Score onReset={handleReset} questionCount={deck.length} />
-
+      <Score onReset={handleReset} questionCount={deck.length} onPass={handlePass} />
+{showFireworks && (
+  <FireworksOverlay onDismiss={() => setShowFireworks(false)} />
+)}
       <div className="w-[95vw] md:w-2xl p-4 rounded mt-1 bg-white m-auto">
         {deckIndex >= deck.length ? (
           <div className="p-8 text-center">

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import useAppStore from "@/store/useAppStore";
 import ProgressBar from "../progressBar";
 import { Categories } from "@/types/category";
@@ -5,15 +6,22 @@ import { Categories } from "@/types/category";
 interface ScoreProps {
   questionCount: number;
   onReset: () => void;
+  onPass: ()=>void;
 }
 
-const Score = ({ questionCount, onReset }: ScoreProps) => {
+const Score = ({ questionCount, onReset, onPass }: ScoreProps) => {
   // based on category (and only flagged), determine total questions and track progress
   const numberAsked = useAppStore((state) => state.numberAsked);
   const numberCorrect = useAppStore((state) => state.numberCorrect);
   const retryList = useAppStore((state) => state.retryList);
   const category = useAppStore((state) => state.category);
   const quizRetryList = useAppStore((state) => state.quizRetryList);
+
+  useEffect(()=>{
+    if (numberCorrect==12 && numberAsked<=20) {
+      onPass();
+    }
+  },[numberCorrect, numberAsked, onPass])
 
   const description =
     category === Categories.AllQuestions && !quizRetryList
@@ -28,7 +36,7 @@ const Score = ({ questionCount, onReset }: ScoreProps) => {
     <div className="w-[95vw] md:w-2xl my-4 p-4 bg-(--color-steel-blue) rounded">
       <div className="text-white flex gap-4 items-center">
         <p>Quiz using {description}</p>
-      </div>{" "}
+      </div>
       <ProgressBar current={numberAsked} total={questionCount} />
       <div className="mt-2 w-full flex flex-col justify-start md:flex-row md:justify-between text-white">
         {numberAsked > 0 && (
