@@ -97,7 +97,7 @@ const Settings = () => {
             </label>
             <button
               onClick={handleResetRetryList}
-              className="px-2 py-1 bg-(--color-red-accent) text-white text-xl rounded-lg"
+              className="px-2 py-1 bg-(--color-red-accent) text-white text-xl"
             >
               <span>Reset Retry List (Count {retryList.size})</span>
             </button>

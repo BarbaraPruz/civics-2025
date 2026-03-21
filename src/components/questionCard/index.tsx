@@ -40,16 +40,16 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
                 {question.reference.label}
               </a>
             </p>
-            <div className="flex mt-2 gap-3">
+            <div className="flex mt-6 gap-3">
               <button
                 onClick={handleCorrect}
-                className="w-sm bg-(--color-red-accent) text-white text-xl rounded-lg"
+                className="w-sm bg-(--color-red-accent) text-white text-xl"
               >
                 I know that!
               </button>
               <button
                 onClick={handleIncorrect}
-                className="w-sm bg-(--color-red-accent) text-white text-xl rounded-lg"
+                className="w-sm bg-(--color-red-accent) text-white text-xl"
               >
                 I didn't know that
               </button>
@@ -58,7 +58,7 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
         ) : (
           <button
             onClick={handleShowAnswer}
-            className="w-xs py-1 bg-(--color-red-accent) text-white text-xl rounded-lg"
+            className="w-xs py-1 bg-(--color-red-accent) text-white text-xl"
           >
             Show Answer
           </button>

@@ -20,7 +20,7 @@ function App() {
           <div>
             <button
               onClick={handleStartQuiz}
-              className="w-sm bg-(--color-green-accent) text-white text-xl rounded-lg"
+              className="w-sm bg-(--color-green-accent) text-white text-xl"
             >
               <div className="flex justify-center ">
                 <span>Let's Start!</span>

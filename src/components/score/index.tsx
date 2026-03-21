@@ -30,20 +30,21 @@ const Score = ({ questionCount, onReset }: ScoreProps) => {
         <p>Quiz using {description}</p>
       </div>{" "}
       <ProgressBar current={numberAsked} total={questionCount} />
-      <div className="mt-2 flex w-full justify-between">
-        <p>
-          {numberCorrect} of {numberAsked} correct
-        </p>
-
+      <div className="mt-2 w-full flex flex-col justify-start md:flex-row md:justify-between text-white">
+        {numberAsked > 0 && (
+          <p>
+            {numberCorrect} of {numberAsked} correct
+          </p>
+        )}
         <p>
           {retryList.size > 0 &&
-            `${retryList.size} missed question saved for Retry`}
+            `${retryList.size} missed question${retryList.size>1?'s':''} saved for Retry`}
         </p>
         <button
           onClick={onReset}
-          className="px-2 py-1 bg-(--color-red-accent) text-white text-xl rounded-lg"
+          className="px-2 py-1 bg-(--color-red-accent) text-white text-xl"
         >
-          <span>Restart</span>
+          Restart
         </button>
       </div>
     </div>

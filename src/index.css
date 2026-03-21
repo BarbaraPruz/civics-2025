@@ -2,10 +2,10 @@
 
 :root {
   --color-dark-background: #034477;
-  --color-red-accent: #ff0000; /* #d4502a; */
+  --color-red-accent: #ff2f2a;/* #d4502a; */
   --color-amber-accent: #f2a83b;
   --color-cream-text: #f5ecd7;
-  --color-steel-blue: #8a9bb0;
+  --color-steel-blue: #5d7189; /* #5d7189; #8a9bb0;*/
   --color-silver: #e8ecf0;
   --color-green-accent: #32cd32;
   
@@ -41,8 +41,14 @@ h3 {
 }
 
 a {
+  @apply pointer-events-auto cursor-pointer underline;
   color: blue;
-  text-decoration: underline;
+}
+
+button {
+  @apply rounded-md font-semibold pointer-events-auto cursor-pointer;
+  @apply transition-transform duration-150 ease-in-out;
+  @apply hover:scale-[1.01];
 }
 
 .subtitle {
