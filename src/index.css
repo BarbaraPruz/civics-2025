@@ -2,13 +2,13 @@
 
 :root {
   --color-dark-background: #034477;
-  --color-red-accent: #ff2f2a;/* #d4502a; */
+  --color-red-accent: #ff2f2a; /* #d4502a; */
   --color-amber-accent: #f2a83b;
   --color-cream-text: #f5ecd7;
   --color-steel-blue: #5d7189; /* #5d7189; #8a9bb0;*/
   --color-silver: #e8ecf0;
   --color-green-accent: #32cd32;
-  
+
   font-family: "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -49,6 +49,10 @@ button {
   @apply rounded-md font-semibold pointer-events-auto cursor-pointer;
   @apply transition-transform duration-150 ease-in-out;
   @apply hover:scale-[1.01];
+}
+
+footer a {
+  @apply pointer-events-auto cursor-pointer underline text-slate-400;
 }
 
 .subtitle {
