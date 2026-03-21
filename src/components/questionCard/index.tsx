@@ -27,7 +27,7 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
           <div className="text-left">
             <p className="subtitle text-left">Answer</p>
             <p
-              className="text-2xl"
+              className="text-xl"
               dangerouslySetInnerHTML={{ __html: question.answer }}
             />
             <p className="mt-1 mb-2">
