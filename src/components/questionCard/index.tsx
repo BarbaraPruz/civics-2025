@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { AudioIcon } from "@/icons";
 import type { Question } from "@/types/question";
 
 interface QuestionCardProps {
@@ -16,10 +17,21 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
   const handleCorrect = () => onResult(true);
   const handleIncorrect = () => onResult(false);
 
+  const handleAudio = () => {
+    const utterance = new SpeechSynthesisUtterance(question.question);
+    utterance.lang = "en-US";
+    window.speechSynthesis.speak(utterance);
+  };
+
   return (
     <div>
       <div>
-        <p className="subtitle">Question</p>
+        <div className="flex justify-between w-full">
+          <p className="subtitle">Question</p>
+          <button onClick={handleAudio}>
+            <AudioIcon />
+          </button>
+        </div>
         <p className="text-center text-2xl">{question.question}</p>
       </div>
       <div className="mt-4 text-center">
