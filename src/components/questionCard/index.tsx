@@ -2,6 +2,18 @@ import { useEffect, useState } from "react";
 import { AudioIcon } from "@/icons";
 import type { Question } from "@/types/question";
 
+const speech = (text: string) => {
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = "en-US";
+  utterance.rate = 0.8;
+  window.speechSynthesis.speak(utterance);
+};
+
+const stripHtml = (html: string) => {
+  const doc = new DOMParser().parseFromString(html, "text/html");
+  return doc.body.textContent || "";
+};
+
 interface QuestionCardProps {
   question: Question;
   onResult: (correctAnswer: boolean) => void;
@@ -17,10 +29,12 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
   const handleCorrect = () => onResult(true);
   const handleIncorrect = () => onResult(false);
 
-  const handleAudio = () => {
-    const utterance = new SpeechSynthesisUtterance(question.question);
-    utterance.lang = "en-US";
-    window.speechSynthesis.speak(utterance);
+  const handleAudioQuestion = () => {
+    speech(question.question);
+  };
+
+  const handleAudioAnswer = () => {
+    speech(stripHtml(question.answer));
   };
 
   return (
@@ -28,7 +42,7 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
       <div>
         <div className="flex justify-between w-full">
           <p className="subtitle">Question</p>
-          <button onClick={handleAudio}>
+          <button onClick={handleAudioQuestion}>
             <AudioIcon />
           </button>
         </div>
@@ -37,7 +51,12 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
       <div className="mt-4 text-center">
         {showAnswer ? (
           <div className="text-left">
-            <p className="subtitle text-left">Answer</p>
+            <div className="flex justify-between w-full">
+              <p className="subtitle text-left">Answer</p>
+              <button onClick={handleAudioAnswer}>
+                <AudioIcon />
+              </button>
+            </div>
             <p
               className="text-xl"
               dangerouslySetInnerHTML={{ __html: question.answer }}
