@@ -1,5 +1,13 @@
-import Select, { type CSSObjectWithLabel, type SingleValue } from "react-select";
+import { useState } from "react";
+
+import Select, {
+  type CSSObjectWithLabel,
+  type SingleValue,
+} from "react-select";
 import useAppStore from "@/store/useAppStore";
+
+import AdditionalSettingsModal from "../additionalSettingsModal";
+import { SettingsIcon } from "@/icons";
 import { Categories, type Category } from "@/types/category";
 
 type OptionType = { label: string; value: string };
@@ -37,38 +45,57 @@ const Settings = () => {
   const retryList = useAppStore((state) => state.retryList);
   const resetRetryList = useAppStore((state) => state.resetRetryList);
 
+  const [showAdditionalSettings, setShowAdditionalSettings] = useState(false);
+
   const onSelectCategory = (selected: SingleValue<OptionType>) => {
     if (selected) setCategory(selected.value as Category);
   };
 
-  const handleCheck = (evt:React.ChangeEvent<HTMLInputElement>) => {
+  const handleCheck = (evt: React.ChangeEvent<HTMLInputElement>) => {
     setQuizRetryList(evt.target.checked);
   };
 
   const handleResetRetryList = () => resetRetryList();
+  const handleAdditionalSettings = () => setShowAdditionalSettings(true);
+  const handleCloseAdditionalSettings = () => setShowAdditionalSettings(false);
 
   return (
     <div className="md:w-2xl my-4 mx-auto p-4 bg-(--color-steel-blue) rounded m-auto">
       <div className="text-white">
-        <div className="flex flex-col md:flex-row md:gap-2">
-          <label
-            htmlFor="categorySelect"
-            className={`text-lg block fw-semibold pr-1`}
+        {/* outer div is just for showing settings button on larger screens */}
+        <div className="flex justify-between">
+          {/* category select - on small screens, this container includes the settings button */}
+          <div className="flex flex-col md:flex-row md:gap-2">
+            <div className="flex justify-between mb-1">
+              <label
+                htmlFor="categorySelect"
+                className={`text-lg block fw-semibold pr-1`}
+              >
+                Category
+              </label>
+              <button onClick={handleAdditionalSettings} className="md:hidden">
+                <SettingsIcon />
+              </button>
+            </div>
+            <Select
+              className="basic-single max-w-[95vw]"
+              classNamePrefix="select"
+              value={
+                categoryOptions.find((opt) => opt.value === category) ?? null
+              }
+              onChange={onSelectCategory}
+              isMulti={false}
+              isSearchable={false}
+              options={categoryOptions}
+              styles={selectStyles}
+            />
+          </div>
+          <button
+            onClick={handleAdditionalSettings}
+            className="hidden md:block"
           >
-            Category
-          </label>
-          <Select
-            className="basic-single max-w-[95vw]"
-            classNamePrefix="select"
-            value={
-              categoryOptions.find((opt) => opt.value === category) ?? null
-            }
-            onChange={onSelectCategory}
-            isMulti={false}
-            isSearchable={false}
-            options={categoryOptions}
-            styles={selectStyles}
-          />
+            <SettingsIcon />
+          </button>
         </div>
         {retryList.size > 0 && (
           <div className="mt-2 w-full flex flex-col gap:1 md:flex-row md:items-center md:justify-between">
@@ -104,6 +131,9 @@ const Settings = () => {
           </div>
         )}
       </div>
+      {showAdditionalSettings && (
+        <AdditionalSettingsModal onClose={handleCloseAdditionalSettings} />
+      )}
     </div>
   );
 };

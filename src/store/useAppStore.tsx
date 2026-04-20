@@ -1,8 +1,10 @@
 import { create } from "zustand";
 import { type Category, Categories } from "@/types/category";
+import { type AudioSetting, AudioSettings } from "@/types/settings";
 
 type AppState = {
   // Settings
+  audioSetting: AudioSetting;
   category: Category;
   quizRetryList: boolean;
 
@@ -12,6 +14,7 @@ type AppState = {
   retryList: Set<number>;
 
   // Actions
+  setAudio: (val: AudioSetting) => void;
   setCategory: (val: Category) => void;
   setQuizRetryList: (val: boolean) => void;
   markCorrect: () => void;
@@ -23,6 +26,7 @@ type AppState = {
 
 const useAppStore = create<AppState>((set) => ({
   // Initial state
+  audioSetting: AudioSettings.Manual,
   category: Categories.AllQuestions,
   quizRetryList: false,
   numberCorrect: 0,
@@ -30,6 +34,7 @@ const useAppStore = create<AppState>((set) => ({
   retryList: new Set(),
 
   // Actions
+  setAudio: (val) => set({ audioSetting: val }),
   setCategory: (val) => set({ category: val }),
   setQuizRetryList: (val) => set({ quizRetryList: val }),
   markCorrect: () =>

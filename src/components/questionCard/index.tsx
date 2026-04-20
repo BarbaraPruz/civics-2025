@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
-import { AudioIcon } from "@/icons";
+
+import useAppStore from "@/store/useAppStore";
+import { AudioIcon, TextIcon } from "@/icons";
 import type { Question } from "@/types/question";
+import { AudioSettings } from "@/types/settings";
 
 const speech = (text: string) => {
   const utterance = new SpeechSynthesisUtterance(text);
   utterance.lang = "en-US";
-  utterance.rate = 0.8;
+  utterance.rate = 0.75;
   window.speechSynthesis.speak(utterance);
 };
 
@@ -20,14 +23,35 @@ interface QuestionCardProps {
 }
 
 const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
-  const [showAnswer, setShowAnswer] = useState(false);
+  const audioSetting = useAppStore((state) => state.audioSetting);
 
-  useEffect(() => setShowAnswer(false), [question]);
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [displayQuestionText, setDisplayQuestionText] = useState(
+    audioSetting === AudioSettings.Manual,
+  );
+
+  useEffect(() => {
+    setShowAnswer(false);
+    if (audioSetting === AudioSettings.Auto) {
+      // To avoid the "double audio" at start of quiz in Auto Audio mode,
+      // disable strict mode in main.tsx
+      speech(question.question);
+    }
+  }, [question, audioSetting]);
 
   const handleShowAnswer = () => setShowAnswer(true);
 
-  const handleCorrect = () => onResult(true);
-  const handleIncorrect = () => onResult(false);
+  const handleCorrect = () => {
+    setDisplayQuestionText(audioSetting === AudioSettings.Manual);
+    onResult(true);
+  };
+
+  const handleIncorrect = () => {
+    setDisplayQuestionText(audioSetting === AudioSettings.Manual);
+    onResult(false);
+  };
+
+  const handleTextQuestion = () => setDisplayQuestionText(true);
 
   const handleAudioQuestion = () => {
     speech(question.question);
@@ -42,11 +66,19 @@ const QuestionCard = ({ question, onResult }: QuestionCardProps) => {
       <div>
         <div className="flex justify-between w-full">
           <p className="subtitle">Question</p>
-          <button onClick={handleAudioQuestion}>
-            <AudioIcon />
-          </button>
+          {audioSetting === AudioSettings.Manual ? (
+            <button onClick={handleAudioQuestion}>
+              <AudioIcon />
+            </button>
+          ) : (
+            <button onClick={handleTextQuestion}>
+              <TextIcon />
+            </button>
+          )}
         </div>
-        <p className="text-center text-2xl">{question.question}</p>
+        {displayQuestionText && (
+          <p className="text-center text-2xl">{question.question}</p>
+        )}
       </div>
       <div className="mt-4 text-center">
         {showAnswer ? (
